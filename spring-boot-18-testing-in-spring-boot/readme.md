@@ -1,12 +1,3 @@
-# Source
-Vào link để xem chi tiết có hình ảnh minh họa:
-
-[Loda.me - 「Spring Boot #18」 Hướng dẫn chi tiết Test Spring Boot][loda-link]
-
-[loda-link]: https://loda.me/spring-boot-18-huong-dan-chi-tiet-test-spring-boot-loda1558861382229
-
-# Content without images
-
 ### Giới thiệu
 
 Viết Test là một phần quan trọng trong việc xây dựng tất cả ứng dụng chứ không riêng gì **Spring Boot**, nên tất nhiên chúng ta không thể bỏ phần này ra khỏi series được rồi.

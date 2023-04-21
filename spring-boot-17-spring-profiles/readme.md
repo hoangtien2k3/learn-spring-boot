@@ -1,11 +1,3 @@
-# Source
-Vào link để xem chi tiết có hình ảnh minh họa:
-
-[Loda.me - 「Spring Boot #17」 Chạy nhiều môi trường với Spring Profile][loda-link]
-
-[loda-link]: https://loda.me/spring-boot-17-chay-nhieu-moi-truong-voi-spring-profile-6f365b8305416dc88219ab99c1ff016e
-
-# Content without images
 ### Giới thiệu
 Tiếp nối series **Spring Boot**:
 

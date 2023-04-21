@@ -1,10 +1,3 @@
-# Source
-Vào link để xem chi tiết có hình ảnh minh họa:
-
-[Loda.me - 「Spring Boot #10」@RequestMapping + @PostMapping + @ModelAttribute + @RequestParam + Web To-Do với Thymeleaf](https://loda.me/spring-boot-10-request-mapping-post-mapping-model-attribute-request-param-web-to-do-voi-thymeleaf-loda1558661736676)
-
-# Content without images
-
 ### Giới thiệu
 
 Trong bài hôm nay chúng ta sẽ tìm hiểu cách handle request POST của **Spring Boot**.

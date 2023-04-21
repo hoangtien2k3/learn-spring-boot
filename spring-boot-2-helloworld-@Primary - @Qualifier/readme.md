@@ -1,9 +1,3 @@
-# Source
-Vào link để xem chi tiết có hình ảnh minh họa: 
-
-[Loda.me - 「Spring Boot #2」@Autowired - @Primary - @Qualifier](https://loda.me/spring-boot-2-autowired-primary-qualifier-loda1557561089057)
-# Content without images
-
 ### Giới thiệu
 
 Trước khi đi vào phần này, có lẽ bạn muốn tìm hiểu cách vận hành của `@Autowired` tại:

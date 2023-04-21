@@ -1,10 +1,4 @@
-# Source
-Vào link để xem chi tiết có hình ảnh minh họa: 
-
-[Loda.me - 「Spring Boot #7」Spring Boot Application Config và @Value](https://loda.me/spring-boot-7-spring-boot-application-config-va-value-loda1558171356103)
-# Content without images
-
-### Giới thiệu 
+s### Giới thiệu 
 
 Trong thực tế không phải lúc nào chúng ta cũng nên để mọi thứ trong code của mình. Có những thông số tốt hơn hết nên được truyền từ bên ngoài vào ứng dụng, để giúp ứng dụng của bạn dễ dàng thay đổi giữa các môi trường khác nhau.
 

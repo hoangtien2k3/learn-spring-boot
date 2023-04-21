@@ -1,10 +1,3 @@
-# Source
-Vào link để xem chi tiết có hình ảnh minh họa:
-
-[Loda.me - 「Spring Boot #11」Hướng dẫn Spring Boot JPA + MySQL](https://loda.me/spring-boot-11-huong-dan-spring-boot-jpa-my-sql-loda1558687596060)
-
-# Content without images
-
 ### Giới thiệu
 
 ### Giới thiệu

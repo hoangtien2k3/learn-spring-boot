@@ -1,9 +1,3 @@
-# Source
-Vào link để xem chi tiết có hình ảnh minh họa: 
-
-[Loda.me - 「Spring Boot #6」@Configuration và @Bean](https://loda.me/spring-boot-6-configuration-va-bean-loda1557885506910)
-# Content without images
-
 ### Giới thiệu
 
 Vậy là chúng ta đã đi qua các khái niệm cơ bản của **Spring Boot**

@@ -1,10 +1,3 @@
-# Source
-
-Vào link để xem chi tiết có hình ảnh minh họa: 
-
-[Loda.me - 「Spring Boot #3」Spring Bean Life Cycle + @PostConstruct và @PreDestroy](https://loda.me/spring-boot-3-spring-bean-life-cycle-post-construct-va-pre-destroy-loda1557583753982)
-# Content without images
-
 ### Giới thiệu
 
 Trong các bài trước, các bạn đã hiểu các khái niệm cơ bản về `Bean` và cách inject nó trong Spring Boot bằng `@Component` + `@Autowired`

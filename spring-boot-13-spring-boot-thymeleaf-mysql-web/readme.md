@@ -1,10 +1,3 @@
-# Source
-Vào link để xem chi tiết có hình ảnh minh họa:
-
-[Loda.me - 「Spring Boot #13 Special」 Chi tiết Spring Boot + Thymeleaf + MySQL + i18n + Web Demo](https://loda.me/spring-boot-13-special-chi-tiet-spring-boot-thymeleaf-my-sql-i18n-web-demo-loda1558758475731)
-
-# Content without images
-
 ### Giới thiệu
 
 Trong loạt series về Spring Boot này, chúng ta đã đi qua hết tất cả các kiến thức căn bản và cần thiết.

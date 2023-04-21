@@ -1,9 +1,3 @@
-# Source
-Vào link để xem chi tiết có hình ảnh minh họa:
-
-[Loda.me - 「Spring Boot #12」Spring JPA Method + @Query](https://loda.me/spring-boot-12-spring-jpa-method-query-loda1558746200832)
-
-# Content without images
 ### Giới thiệu
 
 [Trong bài trước][link-spring-boot-11], mình đã giới thiệu với các bạn Spring JPA, với cách cài đặt và sử dụng hết sức dễ dàng.

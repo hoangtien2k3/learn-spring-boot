@@ -1,10 +1,3 @@
-# Source
-
-Vào link để xem chi tiết có hình ảnh minh họa: 
-
-[Loda.me - 「Spring Boot #4」@Component vs @Service vs @Repository](https://loda.me/spring-boot-4-component-vs-service-vs-repository-loda1557627097246)
-# Content without images
-
 ### Giới thiệu
 
 Trong bài trước chúng ta đã tìm hiểu các khái niệm căn bản và cần thiết trong Spring Boot.

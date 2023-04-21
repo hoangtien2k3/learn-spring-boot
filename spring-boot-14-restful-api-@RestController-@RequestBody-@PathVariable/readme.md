@@ -1,9 +1,3 @@
-# Source
-Vào link để xem chi tiết có hình ảnh minh họa:
-
-[Loda.me - 「Spring Boot #14」 Restful API + @RestController + @PathVariable + @RequestBody](https://loda.me/spring-boot-14-restful-api-rest-controller-path-variable-request-body-loda1558775921707)
-
-# Content without images
 ### Giới thiệu
 
 [Trong bài trước][link-spring-boot-13], chúng ta đã tìm hiểu cách làm Web với **Spring boot** và **Thymeleaf**. Mặc dù rất tốt rồi, nhưng đó chưa hẳn là điểm mạnh của **Spring Boot**. 

@@ -1,12 +1,3 @@
-# Source
-Vào link để xem chi tiết có hình ảnh minh họa:
-
-[Loda.me - 「Spring Boot #15」 Exception Handling @ExceptionHandler + @RestControllerAdvice / @ControllerAdvice + @ResponseStatus][loda-link]
-
-[loda-link]: https://loda.me/spring-boot-15-exception-handling-exception-handler-rest-controller-advice-controller-advice-response-status-loda1558838525127
-
-# Content without images
-
 ### Giới thiệu
 
 [Trong bài trước][link-spring-boot-14] chúng ta đã biết cách làm một Rest Api Server với **Spring Boot**.

@@ -1,11 +1,3 @@
-# Source
-Vào link để xem chi tiết có hình ảnh minh họa: 
-
-[Loda.me - 「Spring Boot #1」Hướng dẫn @Component và @Autowired](https://loda.me/spring-boot-1-huong-dan-component-va-autowired-loda1557412317602)
-
-# Content without images
-
-
 ### Giới thiệu
 
 Đây là bài giới thiệu về 2 Annotation cơ bản trong Spring Boot và `@Component` và `@Autowire`, để có thể hiểu phần này tốt nhất, bạn nên nắm chắc 2 khái niệm sau:
@@ -302,12 +294,4 @@ public class Bikini implements Outfit {
 
 ### Kết
 
-
 Tới đây bạn đã tiếp cận với hai khái niệm cơ bản nhất trong **Spring Boot** và cũng là nền tảng cốt lõi của nó. Việc nắm được cách vận hành của `@Component` và `@Autowired` là bạn đã đi được nửa chặng đường rồi.
-
-Như mọi khi, [Code được up tại Github][link-github].
-
-[link-coupled]: https://loda.me/khai-niem-tight-coupling-lien-ket-rang-buoc-va-cach-loosely-coupled-loda1557323622585
-[link-dependency]: https://loda.me/spring-giai-thich-dependency-injection-di-va-io-c-bang-ngoc-trinh-loda1553326013583
-[link-annotation]: https://loda.me/java-huong-dan-tu-tao-mot-annotations-loda1554297400922
-[link-github]: https://github.com/loda-kun/spring-boot-learning

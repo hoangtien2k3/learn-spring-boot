@@ -1,11 +1,3 @@
-# Source
-Vào link để xem chi tiết có hình ảnh minh họa:
-
-[Loda.me - 「Spring Boot #9」Hướng dẫn chi tiết làm Web với Thymeleaf + Demo Full](https://loda.me/spring-boot-9-huong-dan-chi-tiet-lam-web-voi-thymeleaf-demo-full-loda1558267496214)
-
-# Content without images
-
-
 ### Giới thiệu
 
 [Trong bài trước][link-spring-boot-8], mình đã đề cập với các bạn kiến trúc web của **Spring Boot** và giới thiệu chức năng của `@Controller`. 

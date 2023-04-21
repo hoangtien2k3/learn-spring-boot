@@ -1,11 +1,3 @@
-# Source
-Vào link để xem chi tiết có hình ảnh minh họa:
-
-[Loda.me - 「Spring Boot #16」 Hướng dẫn sử dụng @ConfigurationProperties][loda-link]
-
-[loda-link]: https://loda.me/spring-boot-16-huong-dan-su-dung-configuration-properties-loda1558847989506
-
-# Content without images
 ### Giới thiệu
 
 Tiếp nối Series, [bắt đầu từ bài viết trước][link-spring-boot-15], bạn hoàn toàn đã có thể làm chủ Spring Boot cho nghiệp vụ của mình rồi. Trong các phần sắp tới sẽ là các kiến thức nâng cao hơn để giúp bạn tăng hiệu quả trong code.

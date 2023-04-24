@@ -67,8 +67,7 @@
 ---
 
 
-
-
+[hệ thống booking bằng micro service hỗ trợ chịu tải lớn bằng Java và Spring boot, MySQL](https://viblo.asia/p/thiet-ke-chi-tiet-he-thong-booking-bang-micro-service-ho-tro-chiu-tai-lon-bang-java-va-spring-boot-mysql-AZoJjXeyVY7?fbclid=IwAR3XuTJSOxyYNQ_xHfu17_K-GnmdfAvZiEfNsUSv2AUhG2-PSgNAHnth0nM)
 
 
 

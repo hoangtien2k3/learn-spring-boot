@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 ## spring-boot-1-helloworld-@Component-@Autowired
   * src
     * main
@@ -159,3 +160,17 @@
                 * [App](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/spring-boot-9-thymeleaf/src/main/java/me/loda/spring/thymeleaf/App.java)
                 * [Info](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/spring-boot-9-thymeleaf/src/main/java/me/loda/spring/thymeleaf/Info.java)
                 * [WebController](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/spring-boot-9-thymeleaf/src/main/java/me/loda/spring/thymeleaf/WebController.java)
+=======
+## 1. @Annotations
+  * Components
+    * src
+      * main
+        * java
+          * ProjectComponents
+            * Components
+              * [ComponentsApplication](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/1.%20@Annotations/Components/src/main/java/ProjectComponents/Components/ComponentsApplication.java)
+              * Machine
+                * [machine](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/1.%20@Annotations/Components/src/main/java/ProjectComponents/Components/Machine/machine.java)
+      * test
+              * [ComponentsApplicationTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/1.%20@Annotations/Components/src/test/java/ProjectComponents/Components/ComponentsApplicationTests.java)
+>>>>>>> 8fd411884378428252f853afd1e574f2e97567c7

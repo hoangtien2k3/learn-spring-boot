@@ -13,10 +13,10 @@
                 * [Outfit](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/spring-boot-1-helloworld-@Component-@Autowired/src/main/java/me/loda/spring/helloworld/Outfit.java)
 
 ## spring-boot-10-@PostMapping-@ModelAttribute-thymeleaf
-              * postmappingmodelattibute
-                * [App](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/spring-boot-10-@PostMapping-@ModelAttribute-thymeleaf/src/main/java/me/loda/spring/postmappingmodelattibute/App.java)
-                * [Todo](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/spring-boot-10-@PostMapping-@ModelAttribute-thymeleaf/src/main/java/me/loda/spring/postmappingmodelattibute/Todo.java)
-                * [WebController](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/spring-boot-10-@PostMapping-@ModelAttribute-thymeleaf/src/main/java/me/loda/spring/postmappingmodelattibute/WebController.java)
+    * postmappingmodelattibute
+        * [App](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/spring-boot-10-@PostMapping-@ModelAttribute-thymeleaf/src/main/java/me/loda/spring/postmappingmodelattibute/App.java)
+        * [Todo](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/spring-boot-10-@PostMapping-@ModelAttribute-thymeleaf/src/main/java/me/loda/spring/postmappingmodelattibute/Todo.java)
+        * [WebController](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/spring-boot-10-@PostMapping-@ModelAttribute-thymeleaf/src/main/java/me/loda/spring/postmappingmodelattibute/WebController.java)
 
 ## spring-boot-11-JPA-MySQL
               * jpamysql

@@ -9,6 +9,7 @@ import HospitalManagementJDBC.product.Product;
 
 import java.util.Hashtable;
 import java.util.List;
+import java.util.NoSuchElementException;
 
 @Controller
 @RequestMapping(path = "/products")  // http://localhost:8081/products/
@@ -49,17 +50,18 @@ public class ProductController {
     @GetMapping(path = "/detailProduct") // GET:  http://localhost:8081/products/detailProduct/
     public @ResponseBody Hashtable getDetailProduct(@RequestParam Integer id)  {
         Hashtable<String, Object> response = new Hashtable<>();
-        Product detailProduct = productRepository.findById(id).get();
-        if (detailProduct == null) {
-            response.put("result", "failed");
-            response.put("data", "");
-            response.put("message", "Cannot find product with id = " + id);
-        } else {
+        try {
+            Product detailProduct = productRepository.findById(id).get();
             response.put("result", "oke");
             response.put("data", detailProduct);
             response.put("message", "Query product successfully");
+        } catch(NoSuchElementException e) {
+            response.put("result", "failed");
+            response.put("data", "");
+            response.put("message", "Cannot find product with id = " + id);
+        } finally {
+            return response;
         }
-        return response;
     }
 
 }

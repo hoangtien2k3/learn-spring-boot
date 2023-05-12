@@ -17,6 +17,23 @@
     * test
             * [AccountserviceApplicationTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/accountservice/src/test/java/Demowebservice/accountservice/AccountserviceApplicationTests.java)
 
+## hospital
+    * main
+        * HospitalManagementJDBC
+          * controller
+            * [ProductController](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/hospital/src/main/java/HospitalManagementJDBC/controller/ProductController.java)
+            * [UserController](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/hospital/src/main/java/HospitalManagementJDBC/controller/UserController.java)
+          * [HospitalApplication](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/hospital/src/main/java/HospitalManagementJDBC/HospitalApplication.java)
+          * product
+            * [Product](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/hospital/src/main/java/HospitalManagementJDBC/product/Product.java)
+          * repository
+            * [ProductRepository](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/hospital/src/main/java/HospitalManagementJDBC/repository/ProductRepository.java)
+            * [UserRepository](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/hospital/src/main/java/HospitalManagementJDBC/repository/UserRepository.java)
+          * user
+            * [User](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/hospital/src/main/java/HospitalManagementJDBC/user/User.java)
+    * test
+          * [HospitalApplicationTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/hospital/src/test/java/HospitalManagementJDBC/HospitalApplicationTests.java)
+
 ## note-book
     * main
         * com

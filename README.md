@@ -9,6 +9,7 @@
    ![](docs/images/how_to_config_annotation.jpg)
 
 ## Project Learn Spring Boot Gồm Có:
+[*https://roadmap.sh/pdfs/roadmaps/spring-boot.pdf*](https://roadmap.sh/pdfs/roadmaps/spring-boot.pdf)
 ### I. Spring Boot Basic
 1. [basic-dependency-loosely-coupled](https://github.com/loda-kun/spring-boot-learning/tree/master/basic-dependency-loosely-coupled): Hướng dẫn loosely coupled
 2. [spring-boot-1-helloworld-@Component-@Autowired](https://github.com/hoangtien2k3qx1/learn-spring-boot/tree/main/spring-boot-1-helloworld-%40Component-%40Autowired): 「SP-#1」Hướng dẫn @Component và @Autowired

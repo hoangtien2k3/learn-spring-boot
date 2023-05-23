@@ -206,7 +206,24 @@ public List<User> getUsers() {
 }
 ```
 
-[@PathVariable](): 
+[@PathVariable]():  được sử dụng để trích xuất giá trị từ một phần của URL và ánh xạ vào một biến trong phương thức xử lý yêu cầu.
+- Ví dụ, giả sử bạn có một yêu cầu như sau: /users/123, trong đó 123 là ID của người dùng. Bạn có thể sử dụng @PathVariable để trích xuất giá trị ID từ URL và sử dụng nó trong phương thức xử lý yêu cầu:
+```java
+    // PUT API (updateProduct) - Product is updated successfully
+    @RequestMapping(value = "/products/{id}", method = RequestMethod.PUT)
+    public ResponseEntity<Object> updateProduct(@PathVariable("id") String id,
+                                                @RequestBody Product product) {
+        if (!productRepo.containsKey(id)) {
+            throw new ProductNotfoundException();
+        }
+        productRepo.remove(id);
+        product.setId(id);
+        productRepo.put(id, product);
+        return new ResponseEntity<>("Product is updated successfully", HttpStatus.OK);
+    }
+```
+    
+    
 
 [@RequestParam]():
 

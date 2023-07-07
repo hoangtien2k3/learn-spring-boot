@@ -1,5 +1,6 @@
 package com.SpringBoot.restapi.service.impl;
 
+import com.SpringBoot.restapi.exception.CloudVendorNotFoundException;
 import com.SpringBoot.restapi.model.CloudVendor;
 import com.SpringBoot.restapi.repository.CloudVendorRepository;
 import com.SpringBoot.restapi.service.CloudVendorService;
@@ -38,11 +39,21 @@ public class CloudVendorServiceImpl implements CloudVendorService {
 
     @Override
     public CloudVendor getCloudVendor(String cloudVendorId) {
-        return cloudVendorRepository.findById(cloudVendorId).get();
+//        if (cloudVendorRepository.findById(cloudVendorId).isEmpty()) {
+//            throw new CloudVendorNotFoundException("Requested Cloud Vendor does not exist");
+//        }
+//        return cloudVendorRepository.findById(cloudVendorId).get();
+
+        return cloudVendorRepository.findById(cloudVendorId)
+                .orElseThrow(() -> new CloudVendorNotFoundException
+                        ("Requested Cloud Vendor does not exist")
+                );
     }
+
 
     @Override
     public List<CloudVendor> getAllCloudVendors() {
+        // more business logic
         return cloudVendorRepository.findAll();
     }
 }

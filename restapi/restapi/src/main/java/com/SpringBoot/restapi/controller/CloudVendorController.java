@@ -1,7 +1,10 @@
 package com.SpringBoot.restapi.controller;
 
 import com.SpringBoot.restapi.model.CloudVendor;
+import com.SpringBoot.restapi.response.ResponseHandler;
 import com.SpringBoot.restapi.service.CloudVendorService;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -18,8 +21,11 @@ public class CloudVendorController {
 
     // Read Specific Cloud Vendor Details
     @GetMapping("{vendorId}")
-    public CloudVendor getCloudVendorDetails(@PathVariable("vendorId") String vendorId) {
-        return cloudVendorService.getCloudVendor(vendorId);
+    public ResponseEntity<Object> getCloudVendorDetails(@PathVariable("vendorId") String vendorId) {
+
+        return ResponseHandler.responseBuilder("Resquested Vendor Details are give here",
+                HttpStatus.OK, cloudVendorService.getCloudVendor(vendorId));
+
     }
 
     // Read All Cloud Vendor Details from DB

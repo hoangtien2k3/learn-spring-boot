@@ -10,7 +10,6 @@ import java.util.List;
 
 @Service
 public class CloudVendorServiceImpl implements CloudVendorService {
-
     CloudVendorRepository cloudVendorRepository;
 
     public CloudVendorServiceImpl(CloudVendorRepository cloudVendorRepository) {
@@ -39,15 +38,20 @@ public class CloudVendorServiceImpl implements CloudVendorService {
 
     @Override
     public CloudVendor getCloudVendor(String cloudVendorId) {
-//        if (cloudVendorRepository.findById(cloudVendorId).isEmpty()) {
-//            throw new CloudVendorNotFoundException("Requested Cloud Vendor does not exist");
-//        }
-//        return cloudVendorRepository.findById(cloudVendorId).get();
+/*        if (cloudVendorRepository.findById(cloudVendorId).isEmpty()) {
+            throw new CloudVendorNotFoundException("Requested Cloud Vendor does not exist");
+        }
+        return cloudVendorRepository.findById(cloudVendorId).get();*/
 
         return cloudVendorRepository.findById(cloudVendorId)
                 .orElseThrow(() -> new CloudVendorNotFoundException
                         ("Requested Cloud Vendor does not exist")
                 );
+    }
+
+    @Override
+    public List<CloudVendor> getByVendorName(String vendorName) {
+        return cloudVendorRepository.findByVendorName(vendorName);
     }
 
 

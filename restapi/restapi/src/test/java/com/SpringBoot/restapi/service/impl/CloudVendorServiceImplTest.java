@@ -28,7 +28,6 @@ class CloudVendorServiceImplTest {
     AutoCloseable autoCloseable;
     CloudVendor cloudVendor;
 
-
     @BeforeEach
     void setUp() {
         autoCloseable = MockitoAnnotations.openMocks(this);
@@ -111,6 +110,5 @@ class CloudVendorServiceImplTest {
         assertThat(cloudVendorService.deleteCloudVendor("1"))
                 .isEqualTo("Success");
     }
-
 
 }

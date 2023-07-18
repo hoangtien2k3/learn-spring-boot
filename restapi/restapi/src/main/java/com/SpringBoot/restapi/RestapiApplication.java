@@ -35,7 +35,7 @@ public class RestapiApplication {
 
 	private ApiInfo apiCustomData() {
 		return new ApiInfo(
-				"Hoang Tien API Application",
+				"Cloud Vendor API Application",
 				"Cloud Vendor Documentation",
 				"1.0", "Cloud Vendor Service Terms",
 				new Contact("Hoang Tien", "https://hoangtien2k3qx1.github.io",
@@ -45,6 +45,4 @@ public class RestapiApplication {
 				Collections.emptyList()
 		);
 	}
-
-
 }

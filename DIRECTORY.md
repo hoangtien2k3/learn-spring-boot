@@ -61,6 +61,8 @@
                   * impl
                     * [CloudVendorServiceImpl](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/restapi/restapi/src/main/java/com/SpringBoot/restapi/service/impl/CloudVendorServiceImpl.java)
       * test
+                * controller
+                  * [CloudVendorControllerTest](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/restapi/restapi/src/test/java/com/SpringBoot/restapi/controller/CloudVendorControllerTest.java)
                 * repository
                   * [CloudVendorRepositoryTest](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/restapi/restapi/src/test/java/com/SpringBoot/restapi/repository/CloudVendorRepositoryTest.java)
                 * [RestapiApplicationTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/restapi/restapi/src/test/java/com/SpringBoot/restapi/RestapiApplicationTests.java)

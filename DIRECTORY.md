@@ -25,6 +25,10 @@
           * SpringBoot
             * dbdemo
               * [DbDemoApplication](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/db-demo/src/main/java/com/SpringBoot/dbdemo/DbDemoApplication.java)
+              * entity
+                * [StoreInformation](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/db-demo/src/main/java/com/SpringBoot/dbdemo/entity/StoreInformation.java)
+              * repository
+                * [StoreInformationRepository](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/db-demo/src/main/java/com/SpringBoot/dbdemo/repository/StoreInformationRepository.java)
     * test
               * [DbDemoApplicationTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/db-demo/src/test/java/com/SpringBoot/dbdemo/DbDemoApplicationTests.java)
 

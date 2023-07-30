@@ -4,240 +4,60 @@
 #### Core Spring Framework Annotations
 
 [@Required](): nó được áp dụng cho phương thức setter method. Nó chỉ ra rằng Bean được chú thích phải điền vào thời điểm cấu hình, nếu không thì nó sẽ ném ra ngoại lên 'BeanInitilizationException'
-```java
-public class Machine {  
-    private Integer cost;  
-    @Required  
-    public void setCost(Integer cost) {  
-        this.cost = cost;  
-    }  
-    public Integer getCost() {  
-        return cost;  
-    }     
-}  
-```
-
 
 [@Autowired](): nó được sử dụng để tiêm(inject) đối tượng vào các phương thức 'setter', 'instance variable' và 'constructor'. @Autowired, bộ chứa lò xo sẽ tự động kết nối bean bằng cách khớp loại dữ liệu.
-```java
-@Component  
-public class Customer {  
-    private Person person;  
-    
-    @Autowired  
-    public Customer(Person person) {   
-        this.person=person;  
-    }  
-}  
-```
-
 
 [@Configuration](): Nó là một chú thích cấp bậc.Lớp được chú thích '@Configuration' sử dụng làm nguồn định nghĩa 'Bean'
-```java
-@Configuration  
-public class Vehicle {  
-    
-    @BeanVehicle engine() {  
-        return new Vehicle();  
-    }  
-}  
-```
 
+[@ComponentScan](): là annotation khai báo ở cấp độ class, giống như cái tên của nó, annotation @ComponentScan dùng để scan toàn bộ bean trong ứng dụng, mặc định nó sẽ scan tất cả bean trong package ở vị trí đặt class chưa hàm main, ngoài ra chúng ta cũng có thể tùy chỉnh package cần scan. thường thì annotation @ComponentScan sẽ đi chung vớ @ComponentScan.
 
-[@ComponentScan](): Nó được sử dụng khi chúng ta muốn qquyets một package từ beans. Nó được sử dụng với annotation '@Configuration'
-```java
-@ComponentScan(basePackages = "com.javatpoint")  
-@Configuration  
-public class ScanComponent {  
-    // ...  
-}
-```
+Các param trong `@ComponentScan`:
+- `basePackages`: dùng để chỉ ra những package cần scan, bạn có thể truyền vào một hoặc nhiều package name
+- `basePackageClasses`: chỉ ra những class cần scan
+- `excludeFilters`: dùng để filter loại trừ những bean or package không cần scan
+- `includeFilters`: Dùng dể filter những bean or package cần scan.
+- `lazyInit`: dùng để lazy load bean, default = false
+- `resourcePattern`: chỉ ra các pattern file để Spring có thể scan, default pattern "**/*.class"
 
-
-[@Bean](): Nó là mộ chút thích 'method' cấp bậc. Nó là một sự thay thế của thẻ <bean> XML. Nó cho biết phương thưức tạo ra một Bean được quản lý bởi Spring Container
-```java
-@Bean  
-public BeanExample beanExample() {  
-    return new BeanExample ();  
-}  
-```
-
+[@Bean](): nó là một annotation cho method. Nó là sự thay thể của thẻ XML <bean>. Nó cho biết method tạo ra một bean được Spring Container quản lý.
 
 ## Các mẫu Spring Boot Annotations:
 
-[@Component]() : Nó là một chú thích 'class' cấp bậc. Nó được sử dụng để đánh dấu lớp(class) là một Bean.
-```java
-@Component  
-public class Student {  
-    .......  
-}  
-```
+[@Component]() :  là một annotation của class. Nó dùng để đánh dấu class Java là một bean. Một class Java được đánh dấu @Component được tìm thấy trong classpath. Spring Framework chọn nó và cấu hình trong ngữ cảnh ứng dụng như một Spring Bean.
 
+[@Controller](): là một annotation ở class. Là một chuyên môn hóa của @Component. Nó đánh dấu class là một class để xử lý request web. Nó thường được sử dụng để phục vụ các request từ UI. Mặc định thì nó trả về một chuỗi cho biết route nào cần redirect. Nó chủ yếu được sử dụng với annotation @RequestMapping.
 
-[@Controller](): Nó là chú thích 'class' cấp bậc. Nó tương đương với '@Component'. Nó chủ yếu được sử dụng với chú thích '@RequestMapping'.
-```java
-@Controller  
-@RequestMapping("books")  
-public class BooksController {  
-    @RequestMapping(value = "/{name}", method = RequestMethod.GET)  
-    public Employee getBooksByName() {  
-        return booksTemplate;  
-    }  
-}  
-```
+[@Service]() : nố thường được sử dụng ở class. Nó cho biết Spring biết rằng class này chứa business login.
 
+[@Repository](): nó thường được dụng ở class. Repository là một DAOs (Data Access Object) cái mà sẽ truy cập trực tiếp vào database. Repository thực hiện tất cả các hoạt động liên quan đến database.
 
-[@Service]() : Nó là chú thích 'class' cấp bậc. Nó đánh dấu class chứ các Logic nghiệp vụ
-```java
-package com.javatpoint;  
-@Service  
-public class TestService {  
-    public void service1() {  
-        //business code  
-    }  
-}  
-```
-
-
-[@Repository](): Nó là chú thích 'class' cấp bậc. Kho lưu trữ là một DAO(Data Access Object) nơi truy cập trực tiếp vao cơ sở dữ liệu. Kho lưu trữ thực hiện tất cả hoạt động liên quan tới Cơ sở dữ liệu.
-```java
-package com.javatpoint;  
-@Repository   
-public class TestRepository {  
-    public void delete() {     
-        //persistence code  
-    }  
-}  
-```
 
 ## Spring Boot Annotations:
 
-[@EnableAutoConfiguration]() : Nó tự động cấu hình Bean trong đường dẫn lớp và định cấu hình nó để chạy chương trình. Nó đã cũ và được thay thế bởi '@SpringBootApplication'.
+[@EnableAutoConfiguration]() : Nó tự động cấu hình bean có trong classpath và cấu hình nó để chạy các phương thức. Việc sử dụng chú thích này bị giảm trong bản phát hành Spring Boot 1.2.0 vì các nhà phát triển đã cung cấp một giải pháp thay thế cho chú thích, tức là `@SpringBootApplication.`
 
-[@SpringBootApplication]() : Nó là sự kết hợp của 3 chú thích: + @EnableAutoConfiguration, + @ComponentScan, + @Configuration.
-
-[@ComponentScan]() : 
-[@Configuration]() :
-
+[@SpringBootApplication]() : Nó là sự kết hợp của 3 chú thích: `@EnableAutoConfiguration`, `@ComponentScan`, `@Configuration.`
 
 
 ## Spring MVC and REST Annotations:
 
-[@RequestMapping]() : Nó được sử dụng để ánh xạ các yêu cầu web. Nó thì có nhiêu optional elements như: consumes, header, method, name, params, path, produces, and value. 
-```java
-@Controller  
-public class BooksController {  
-@RequestMapping("/computer-science/books")  
-public String getAllBooks(Model model) {  
-    //application code  
-    return "bookList";  
-}  
-```
+[@RequestMapping]() :  nó được sử dụng để map các request. Nó có nhiều phần tử tùy chọn như `consumes`, `header`, `method`, `name`, `params`, `path`, `produces`, và `value`. Chúng tôi sử dụng nó với lớp cũng như phương thức
+
+[@GetMapping]() : nó map HTTP GET request trên method cụ thể. Nó dùng để tạo một điểm cuối trong web service, và nó được sử dụng thay cho `@RequestMapping(method = RequestMethod.GET)`.
+
+[@PostMapping](): sử dụng khi gửi data tới server để tạo ra tài nguyên mới. Thay cho `@RequestMapping(method = RequestMethod.POST)`.
+
+[@PutMapping](): sử dụng để thay đổi thông tin của một tài nguyên đã tồn tại trong hệ thống bằng cách sử dụng nội dung trong body của request. Nó được sử dụng thay vì sử dụng: `@RequestMapping (method = RequestMethod.PUT)`.
+
+[@DeleteMapping](): sử dụng để xóa một resource chỉ định. Nó được sử dụng thay vì sử dụng: @RequestMapping (method = RequestMethod.DELETE).
 
 
-[@GetMapping]() : Nó ánh xạ các yêu cầu HTTP GET trên phương thức xử lý cụ thể. Nó sử dụng để tạo ra web service endpoint để fetches , nó được tạo và sử dụng '@RequestMapping(method = RequestMethod.GET)'
-- Lưu ý: `@RequestMapping(method = RequestMethod.GET)` và `@GetMapping` là tương đương nhau, tuy nhiên để làm mã nguồn trở nên ngắn gọn và dễ đọc, nên ưu tiên sử dụng `@GetMapping`
+## TỔNG HỢP TÀI LIỆU LẬP TRÌNH
 
-```java
-@GetMapping("/users")
-public List<User> getUsers() {
-    // code xử lý yêu cầu GET
-}
+[@PatchMapping](): Sử dụng để áp dụng sửa đổi 1 phần cho resource. Nó được sử dụng thay vì sử dụng: `@RequestMapping (method = RequestMethod.PATCH)`
 
-//////////////////////////////////
-@RequestMapping(value = "/users", method = RequestMethod.GET)
-public List<User> getUsers() {
-    // code xử lý yêu cầu GET
-}
-```
+[@RequestBody](): Nó được sử dụng để liên kết yêu cầu HTTP với một đối tượng trong một tham số phương thức. Bên trong nó sử dụng `HTTP MessageConverters` để chuyển đổi phần thân của yêu cầu. Khi chúng tôi chú thích một tham số phương thức với `@RequestBody`, Spring sẽ liên kết phần body yêu cầu HTTP đến với tham số đó.
 
+[@RequestHeader](): Nó được sử dụng để lấy thông tin chi tiết về tiêu đề yêu cầu HTTP. Chúng tôi sử dụng chú thích này như một tham số phương thức. Các phần tử tùy chọn của chú thích là `name`, `required`, `value`, `defaultValue`. Đối với mỗi chi tiết trong tiêu đề, chúng ta nên chỉ định các chú thích riêng biệt. Chúng ta có thể sử dụng nó nhiều lần trong một phương pháp.
 
-[@PostMapping](): Nó ánh xạ các yêu cầu HTTP POST để tạo web service endpoint. Nó được sử dụng thay vì sử dụng '@RequestMapping(method = RequestMethod.POST)'
-```java
-@PostMapping("/users")
-public User createUser(@RequestBody User user) {
-    // code xử lý yêu cầu POST
-}
-```
-
-[@PutMapping](): Nó ánh xạ các yêu cầu HTTP PUT trên phương thức xử lý cụ thể. Nó được sử dụng để tạo web service endpoint hoặc updates. Nó được sử dụng thay vì sử dụng '@RequestMapping(method = RequestMethod.PUT)'
-```java
-@PutMapping("/users/{id}")
-public User updateUser(@PathVariable("id") Long id, @RequestBody User user) {
-    // code xử lý yêu cầu PUT để cập nhật thông tin user với id tương ứng
-}
-```
-
-
-[@DeleteMapping](): Nó ánh xạ các yêu cầu XÓA HTTP trên phương thức xử lý cụ thể. Nó được sử dụng để tạo a web service endpoint that deletes. Nó được sử dụng thay vì sử dụng '@RequestMapping(method = RequestMethod.DELETE)'
-```java
-@DeleteMapping("/users/{id}")
-public void deleteUser(@PathVariable("id") Long id) {
-    // code xử lý yêu cầu DELETE để xóa user với id tương ứng
-}
-```
-
-
-[@PatchMapping](): Nó ánh xạ các yêu cầu HTTP PATCH trên phương thức xử lý cụ thể. Nó được sử dụng thay vì sử dụng '@RequestMapping(method = RequestMethod.PATCH)'
-```java
-@PatchMapping("/users/{id}")
-public User updateUserPartial(@PathVariable("id") Long id, @RequestBody User user) {
-    // code xử lý yêu cầu PATCH để cập nhật một số thuộc tính của user với id tương ứng
-}
-```
-
-
-[@RequestBody](): Nó được sử dụng trong Spring để đánh dấu một tham số phương thức. Nó cho phép Spring biết rằng giá trị của tham số được truyền vào phương thức thông qua thân request của yêu cầu HTTP.
-```java
-@PostMapping("/users")
-public User createUser(@RequestBody User user) {
-    // code xử lý yêu cầu POST để thêm user mới
-}
-```
-
-
-[@ResponseBody](): Nó liên kết giá trị trả về của phương thức với nội dung phản hồi. Nó yêu cầu Spring Boot Framework tuần tự hóa trả về một đối tượng thành định dạng JSON và XML.
-```java
-@GetMapping("/users")
-@ResponseBody
-public List<User> getUsers() {
-    List<User> users = userService.getUsers();
-    return users;
-}
-```
-
-[@PathVariable]():  được sử dụng để trích xuất giá trị từ một phần của URL và ánh xạ vào một biến trong phương thức xử lý yêu cầu.
-- Ví dụ, giả sử bạn có một yêu cầu như sau: /users/123, trong đó 123 là ID của người dùng. Bạn có thể sử dụng @PathVariable để trích xuất giá trị ID từ URL và sử dụng nó trong phương thức xử lý yêu cầu:
-```java
-    // PUT API (updateProduct) - Product is updated successfully
-    @RequestMapping(value = "/products/{id}", method = RequestMethod.PUT)
-    public ResponseEntity<Object> updateProduct(@PathVariable("id") String id,
-                                                @RequestBody Product product) {
-        if (!productRepo.containsKey(id)) {
-            throw new ProductNotfoundException();
-        }
-        productRepo.remove(id);
-        product.setId(id);
-        productRepo.put(id, product);
-        return new ResponseEntity<>("Product is updated successfully", HttpStatus.OK);
-    }
-```
-    
-    
-
-[@RequestParam]():
-
-[@RequestHeader]():
-
-[@RestController]():
-
-[@RequestAttribute](): 
-
-
-
-
-
-
-
-
-
+[@RestController]():  là một composed annotation được kết từ annotation @Controller và @ResponseBody, khi đặt một annotation @RestController trên một class controller thì mọi method controller trong class đó sẽ được thừa hưởng annotation `@ResponseBody` và response data trong controller này sẽ được trả về dưới dạng `message`.

@@ -1,27 +1,17 @@
 
-## 13. Spring Boot – Interceptor
-  * demo
-    * src
-      * main
-        * java
-          * LearnSpringBoot
-            * demo
-              * controller
-                * [ProductServiceController](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/13.%20Spring%20Boot%20–%20Interceptor/demo/src/main/java/LearnSpringBoot/demo/controller/ProductServiceController.java)
-              * [DemoApplication](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/13.%20Spring%20Boot%20–%20Interceptor/demo/src/main/java/LearnSpringBoot/demo/DemoApplication.java)
-              * entity
-                * [Product](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/13.%20Spring%20Boot%20–%20Interceptor/demo/src/main/java/LearnSpringBoot/demo/entity/Product.java)
-              * service
-                * [ProductService](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/13.%20Spring%20Boot%20–%20Interceptor/demo/src/main/java/LearnSpringBoot/demo/service/ProductService.java)
-                * [ProductServiceImpl](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/13.%20Spring%20Boot%20–%20Interceptor/demo/src/main/java/LearnSpringBoot/demo/service/ProductServiceImpl.java)
-      * test
-              * [DemoApplicationTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/13.%20Spring%20Boot%20–%20Interceptor/demo/src/test/java/LearnSpringBoot/demo/DemoApplicationTests.java)
-
-## db-demo
+## blog-app-apis
   * src
     * main
       * java
         * com
+          * hoangtien2k3
+            * blog
+              * [BlogAppApisApplication](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/blog-app-apis/src/main/java/com/hoangtien2k3/blog/BlogAppApisApplication.java)
+    * test
+              * [BlogAppApisApplicationTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/blog-app-apis/src/test/java/com/hoangtien2k3/blog/BlogAppApisApplicationTests.java)
+
+## db-demo
+    * main
           * SpringBoot
             * dbdemo
               * [DbDemoApplication](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/db-demo/src/main/java/com/SpringBoot/dbdemo/DbDemoApplication.java)

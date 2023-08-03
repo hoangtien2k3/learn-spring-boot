@@ -67,3 +67,12 @@
               * service
                 * impl
                   * [CloudVendorServiceImplTest](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/restapi/src/test/java/com/SpringBoot/restapi/service/impl/CloudVendorServiceImplTest.java)
+
+## springboot-first-app
+    * main
+          * springboot
+            * app
+              * [HelloWorldController](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-first-app/src/main/java/com/springboot/app/HelloWorldController.java)
+              * [SpringbootFirstAppApplication](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-first-app/src/main/java/com/springboot/app/SpringbootFirstAppApplication.java)
+    * test
+              * [SpringbootFirstAppApplicationTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-first-app/src/test/java/com/springboot/app/SpringbootFirstAppApplicationTests.java)

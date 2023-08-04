@@ -61,3 +61,16 @@ Các param trong `@ComponentScan`:
 [@RequestHeader](): Nó được sử dụng để lấy thông tin chi tiết về tiêu đề yêu cầu HTTP. Chúng tôi sử dụng chú thích này như một tham số phương thức. Các phần tử tùy chọn của chú thích là `name`, `required`, `value`, `defaultValue`. Đối với mỗi chi tiết trong tiêu đề, chúng ta nên chỉ định các chú thích riêng biệt. Chúng ta có thể sử dụng nó nhiều lần trong một phương pháp.
 
 [@RestController]():  là một composed annotation được kết từ annotation @Controller và @ResponseBody, khi đặt một annotation @RestController trên một class controller thì mọi method controller trong class đó sẽ được thừa hưởng annotation `@ResponseBody` và response data trong controller này sẽ được trả về dưới dạng `message`.
+
+
+[@ControllerAdvice](): được sử dụng trong ứng dụng Spring Boot khi bạn có các controller truyền thống sử dụng @Controller để xử lý các yêu cầu HTTP. Annotation này cho phép bạn xử lý các exception toàn cục (global exception handling) chung cho toàn bộ các controller trong ứng dụng. Khi sử dụng `@ControllerAdvice`, bạn cần kết hợp với các phương thức được đánh dấu bằng `@ExceptionHandler` để xác định xử lý cho từng loại exception cụ thể.
+
+
+[@RestControllerAdvice](): cũng được sử dụng để xử lý các exception, nhưng chủ yếu dành cho các ứng dụng RESTful API. Annotation này kết hợp giữa `@ControllerAdvice` và `@ResponseBody`, cho phép trả về các thông báo lỗi dưới dạng các đối tượng JSON. Khi sử dụng @RestControllerAdvice, bạn không cần kết hợp với @ExceptionHandler, mà bạn có thể đánh dấu các phương thức xử lý exception trực tiếp với @ExceptionHandler.
+
+
+
+
+
+
+

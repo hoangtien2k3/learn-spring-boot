@@ -72,5 +72,6 @@ Các param trong `@ComponentScan`:
 [@ExceptionHandler](): là một trong những annotation quan trọng trong Spring Boot, được sử dụng để xử lý các exception (ngoại lệ) xảy ra trong controller của ứng dụng. @ExceptionHandler cho phép bạn đánh dấu một phương thức trong controller để xử lý exception đó và trả về một thông báo lỗi phù hợp cho client.
 
 
+[@EntityListeners(AuditingEntityListener.class)](): thường được sử dụng để kích hoạt tính năng Auditing (theo dõi) trong Spring Boot, cho phép tự động ghi thông tin thời gian (thời gian tạo và thời gian cập nhật) và người dùng (người tạo và người cập nhật) vào các bản ghi trong cơ sở dữ liệu.
 
 

@@ -69,7 +69,7 @@ Các param trong `@ComponentScan`:
 [@RestControllerAdvice](): cũng được sử dụng để xử lý các exception, nhưng chủ yếu dành cho các ứng dụng RESTful API. Annotation này kết hợp giữa `@ControllerAdvice` và `@ResponseBody`, cho phép trả về các thông báo lỗi dưới dạng các đối tượng JSON. Khi sử dụng @RestControllerAdvice, bạn không cần kết hợp với @ExceptionHandler, mà bạn có thể đánh dấu các phương thức xử lý exception trực tiếp với @ExceptionHandler.
 
 
-
+[@ExceptionHandler](): là một trong những annotation quan trọng trong Spring Boot, được sử dụng để xử lý các exception (ngoại lệ) xảy ra trong controller của ứng dụng. @ExceptionHandler cho phép bạn đánh dấu một phương thức trong controller để xử lý exception đó và trả về một thông báo lỗi phù hợp cho client.
 
 
 

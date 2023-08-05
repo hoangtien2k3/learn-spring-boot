@@ -75,3 +75,13 @@ Các param trong `@ComponentScan`:
 [@EntityListeners(AuditingEntityListener.class)](): thường được sử dụng để kích hoạt tính năng Auditing (theo dõi) trong Spring Boot, cho phép tự động ghi thông tin thời gian (thời gian tạo và thời gian cập nhật) và người dùng (người tạo và người cập nhật) vào các bản ghi trong cơ sở dữ liệu.
 
 
+[@NoArgsConstructor và @AllArgsConstructor]() : là một số trong số những annotation mạnh mẽ của Lombok, được sử dụng để tự động tạo các constructor trong các lớp Java `Lombok`.
+
+
+
+
+
+
+
+
+

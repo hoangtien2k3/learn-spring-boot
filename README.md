@@ -296,6 +296,3 @@
 - [Free Spring Boot Microservices Open Source Projects | GitHub | Download]()
 - [Free Spring Boot Angular Open Source Projects | GitHub]()
 
-
-
-

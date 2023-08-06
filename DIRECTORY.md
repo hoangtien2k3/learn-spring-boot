@@ -68,6 +68,24 @@
                 * impl
                   * [CloudVendorServiceImplTest](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/restapi/src/test/java/com/SpringBoot/restapi/service/impl/CloudVendorServiceImplTest.java)
 
+## spring-boot2-jpa-crud-example
+    * main
+          * springbootlearning
+            * springboot2jpacrudexample
+              * controller
+                * [EmployeeController](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/spring-boot2-jpa-crud-example/src/main/java/com/springbootlearning/springboot2jpacrudexample/controller/EmployeeController.java)
+              * exception
+                * [ErrorDetails](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/spring-boot2-jpa-crud-example/src/main/java/com/springbootlearning/springboot2jpacrudexample/exception/ErrorDetails.java)
+                * [GlobalExceptionHandler](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/spring-boot2-jpa-crud-example/src/main/java/com/springbootlearning/springboot2jpacrudexample/exception/GlobalExceptionHandler.java)
+                * [ResourceNotFoundException](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/spring-boot2-jpa-crud-example/src/main/java/com/springbootlearning/springboot2jpacrudexample/exception/ResourceNotFoundException.java)
+              * model
+                * [Employee](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/spring-boot2-jpa-crud-example/src/main/java/com/springbootlearning/springboot2jpacrudexample/model/Employee.java)
+              * repository
+                * [EmployeeRepository](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/spring-boot2-jpa-crud-example/src/main/java/com/springbootlearning/springboot2jpacrudexample/repository/EmployeeRepository.java)
+              * [SpringBoot2JpaCrudExampleApplication](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/spring-boot2-jpa-crud-example/src/main/java/com/springbootlearning/springboot2jpacrudexample/SpringBoot2JpaCrudExampleApplication.java)
+    * test
+              * [SpringBoot2JpaCrudExampleApplicationTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/spring-boot2-jpa-crud-example/src/test/java/com/springbootlearning/springboot2jpacrudexample/SpringBoot2JpaCrudExampleApplicationTests.java)
+
 ## springboot-first-app
     * main
           * springboot
@@ -76,3 +94,86 @@
               * [SpringbootFirstAppApplication](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-first-app/src/main/java/com/springboot/app/SpringbootFirstAppApplication.java)
     * test
               * [SpringbootFirstAppApplicationTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-first-app/src/test/java/com/springboot/app/SpringbootFirstAppApplicationTests.java)
+
+## springboot-jpa-rest-api
+    * main
+          * learnspringboot
+            * springbootjparestapi
+              * controller
+                * [UserController](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-jpa-rest-api/src/main/java/com/learnspringboot/springbootjparestapi/controller/UserController.java)
+              * exception
+                * [ResourceNotFoundException](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-jpa-rest-api/src/main/java/com/learnspringboot/springbootjparestapi/exception/ResourceNotFoundException.java)
+              * model
+                * [User](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-jpa-rest-api/src/main/java/com/learnspringboot/springbootjparestapi/model/User.java)
+              * repository
+                * [UserRepository](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-jpa-rest-api/src/main/java/com/learnspringboot/springbootjparestapi/repository/UserRepository.java)
+              * [SpringbootJpaRestApiApplication](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-jpa-rest-api/src/main/java/com/learnspringboot/springbootjparestapi/SpringbootJpaRestApiApplication.java)
+    * test
+              * [SpringbootJpaRestApiApplicationTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-jpa-rest-api/src/test/java/com/learnspringboot/springbootjparestapi/SpringbootJpaRestApiApplicationTests.java)
+
+## springboot-mysql-jpa-hibernate-restfull-crud-api
+    * main
+          * springbootlearning
+            * springbootmysqljpahibernaterestfullcrudapi
+              * controller
+                * [UserController](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-mysql-jpa-hibernate-restfull-crud-api/src/main/java/com/springbootlearning/springbootmysqljpahibernaterestfullcrudapi/controller/UserController.java)
+              * exception
+                * [ErrorDetails](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-mysql-jpa-hibernate-restfull-crud-api/src/main/java/com/springbootlearning/springbootmysqljpahibernaterestfullcrudapi/exception/ErrorDetails.java)
+                * [GlobalExceptionHandler](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-mysql-jpa-hibernate-restfull-crud-api/src/main/java/com/springbootlearning/springbootmysqljpahibernaterestfullcrudapi/exception/GlobalExceptionHandler.java)
+                * [ResourceNotFoundException](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-mysql-jpa-hibernate-restfull-crud-api/src/main/java/com/springbootlearning/springbootmysqljpahibernaterestfullcrudapi/exception/ResourceNotFoundException.java)
+              * model
+                * [User](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-mysql-jpa-hibernate-restfull-crud-api/src/main/java/com/springbootlearning/springbootmysqljpahibernaterestfullcrudapi/model/User.java)
+              * repository
+                * [UserRepository](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-mysql-jpa-hibernate-restfull-crud-api/src/main/java/com/springbootlearning/springbootmysqljpahibernaterestfullcrudapi/repository/UserRepository.java)
+              * [SpringbootMysqlJpaHibernateRestfullCrudApiApplication](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-mysql-jpa-hibernate-restfull-crud-api/src/main/java/com/springbootlearning/springbootmysqljpahibernaterestfullcrudapi/SpringbootMysqlJpaHibernateRestfullCrudApiApplication.java)
+    * test
+              * [SpringBootCrudRestApplicationTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-mysql-jpa-hibernate-restfull-crud-api/src/test/java/com/springbootlearning/springbootmysqljpahibernaterestfullcrudapi/SpringBootCrudRestApplicationTests.java)
+
+## springboot-restful-webservices
+    * main
+            * springbootrestfulwebservices
+              * controller
+                * [UserController](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-restful-webservices/src/main/java/com/springbootlearning/springbootrestfulwebservices/controller/UserController.java)
+              * entity
+                * [User](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-restful-webservices/src/main/java/com/springbootlearning/springbootrestfulwebservices/entity/User.java)
+              * repository
+                * [UserRepository](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-restful-webservices/src/main/java/com/springbootlearning/springbootrestfulwebservices/repository/UserRepository.java)
+              * service
+                * impl
+                  * [UserServiceImpl](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-restful-webservices/src/main/java/com/springbootlearning/springbootrestfulwebservices/service/impl/UserServiceImpl.java)
+                * [UserService](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-restful-webservices/src/main/java/com/springbootlearning/springbootrestfulwebservices/service/UserService.java)
+              * [SpringbootRestfulWebservicesApplication](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-restful-webservices/src/main/java/com/springbootlearning/springbootrestfulwebservices/SpringbootRestfulWebservicesApplication.java)
+    * test
+              * [SpringbootRestfulWebservicesApplicationTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-restful-webservices/src/test/java/com/springbootlearning/springbootrestfulwebservices/SpringbootRestfulWebservicesApplicationTests.java)
+
+## springboot-search-rest-api
+    * main
+          * hoantien2k3
+            * springbootsearchrestapi
+              * controller
+                * [ProductController](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-search-rest-api/src/main/java/com/hoantien2k3/springbootsearchrestapi/controller/ProductController.java)
+              * entity
+                * [Product](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-search-rest-api/src/main/java/com/hoantien2k3/springbootsearchrestapi/entity/Product.java)
+              * repository
+                * [ProductRepository](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-search-rest-api/src/main/java/com/hoantien2k3/springbootsearchrestapi/repository/ProductRepository.java)
+              * service
+                * Impl
+                  * [ProductServiceImpl](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-search-rest-api/src/main/java/com/hoantien2k3/springbootsearchrestapi/service/Impl/ProductServiceImpl.java)
+                * [ProductService](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-search-rest-api/src/main/java/com/hoantien2k3/springbootsearchrestapi/service/ProductService.java)
+              * [SpringbootSearchRestApiApplication](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-search-rest-api/src/main/java/com/hoantien2k3/springbootsearchrestapi/SpringbootSearchRestApiApplication.java)
+    * test
+              * [SpringbootSearchRestApiApplicationTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-search-rest-api/src/test/java/com/hoantien2k3/springbootsearchrestapi/SpringbootSearchRestApiApplicationTests.java)
+
+## springboot-thymeleaf-jpa-hibernate-mysql
+    * main
+          * springbootlearning
+            * springbootthymeleafjpahibernatemysql
+              * controllers
+                * [HomeController](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-thymeleaf-jpa-hibernate-mysql/src/main/java/com/springbootlearning/springbootthymeleafjpahibernatemysql/controllers/HomeController.java)
+              * domain
+                * [User](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-thymeleaf-jpa-hibernate-mysql/src/main/java/com/springbootlearning/springbootthymeleafjpahibernatemysql/domain/User.java)
+              * repositories
+                * [UserRepository](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-thymeleaf-jpa-hibernate-mysql/src/main/java/com/springbootlearning/springbootthymeleafjpahibernatemysql/repositories/UserRepository.java)
+              * [SpringbootThymeleafJpaHibernateMysqlApplication](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-thymeleaf-jpa-hibernate-mysql/src/main/java/com/springbootlearning/springbootthymeleafjpahibernatemysql/SpringbootThymeleafJpaHibernateMysqlApplication.java)
+    * test
+              * [SpringbootThymeleafJpaHibernateMysqlApplicationTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-thymeleaf-jpa-hibernate-mysql/src/test/java/com/springbootlearning/springbootthymeleafjpahibernatemysql/SpringbootThymeleafJpaHibernateMysqlApplicationTests.java)

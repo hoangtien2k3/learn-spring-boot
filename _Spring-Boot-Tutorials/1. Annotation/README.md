@@ -61,3 +61,20 @@ Các param trong `@ComponentScan`:
 [@RequestHeader](): Nó được sử dụng để lấy thông tin chi tiết về tiêu đề yêu cầu HTTP. Chúng tôi sử dụng chú thích này như một tham số phương thức. Các phần tử tùy chọn của chú thích là `name`, `required`, `value`, `defaultValue`. Đối với mỗi chi tiết trong tiêu đề, chúng ta nên chỉ định các chú thích riêng biệt. Chúng ta có thể sử dụng nó nhiều lần trong một phương pháp.
 
 [@RestController]():  là một composed annotation được kết từ annotation @Controller và @ResponseBody, khi đặt một annotation @RestController trên một class controller thì mọi method controller trong class đó sẽ được thừa hưởng annotation `@ResponseBody` và response data trong controller này sẽ được trả về dưới dạng `message`.
+
+ 
+## HTTP Status Code
+
+- [200 OK]() : Mã này chỉ ra rằng yêu cầu thành công và nội dung phản hồi được trả lại cho máy khách khi thích hợp.
+- [201 OK]() : Mã này chỉ ra rằng yêu cầu thành công và tài nguyên mới được tạo.
+- [400 Bad Request]() : Mã này cho biết rằng máy chủ không thể xử lý yêu cầu do cú pháp không đúng định dạng trong yêu cầu. Khách hàng có thể thử lại sau khi sửa yêu cầu.
+- [401 Unauthorized]() :  Mã này chỉ ra rằng xác thực là bắt buộc đối với tài nguyên. Khách hàng có thể thử lại với xác thực phù hợp.
+- [403 Forbidden]() : Mã này chỉ ra rằng máy chủ đang từ chối trả lời yêu cầu ngay cả khi yêu cầu hợp lệ. Lý do sẽ được liệt kê trong nội dung cơ thể nếu yêu cầu không phải là phương thức HEAD.
+- [404 Not Found]() : Mã này chỉ ra rằng tài nguyên được yêu cầu không được tìm thấy tại vị trí được chỉ định trong yêu cầu.
+- [500 Internal Server Error]() : Mã này biểu thị thông báo lỗi chung và cho biết đã xảy ra lỗi không mong muốn trên máy chủ và yêu cầu không thể thực hiện được.
+
+
+
+
+  
+

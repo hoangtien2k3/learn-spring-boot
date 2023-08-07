@@ -219,3 +219,23 @@
                 * [SpringbootThymeleafJpaHibernateMysqlApplication](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Spring-Boot-REST-API-Development/springboot-thymeleaf-jpa-hibernate-mysql/src/main/java/com/springbootlearning/springbootthymeleafjpahibernatemysql/SpringbootThymeleafJpaHibernateMysqlApplication.java)
       * test
                 * [SpringbootThymeleafJpaHibernateMysqlApplicationTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Spring-Boot-REST-API-Development/springboot-thymeleaf-jpa-hibernate-mysql/src/test/java/com/springbootlearning/springbootthymeleafjpahibernatemysql/SpringbootThymeleafJpaHibernateMysqlApplicationTests.java)
+  * springboot-upload-download-file-rest-api-example
+      * main
+            * hoangtien2k3
+              * springboot
+                * fileuploaddownload
+                  * controller
+                    * [FileDownloadController](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Spring-Boot-REST-API-Development/springboot-upload-download-file-rest-api-example/src/main/java/com/hoangtien2k3/springboot/fileuploaddownload/controller/FileDownloadController.java)
+                    * [FileUploadController](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Spring-Boot-REST-API-Development/springboot-upload-download-file-rest-api-example/src/main/java/com/hoangtien2k3/springboot/fileuploaddownload/controller/FileUploadController.java)
+                  * exception
+                    * [FileNotFoundException](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Spring-Boot-REST-API-Development/springboot-upload-download-file-rest-api-example/src/main/java/com/hoangtien2k3/springboot/fileuploaddownload/exception/FileNotFoundException.java)
+                    * [FileStorageException](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Spring-Boot-REST-API-Development/springboot-upload-download-file-rest-api-example/src/main/java/com/hoangtien2k3/springboot/fileuploaddownload/exception/FileStorageException.java)
+                  * payload
+                    * [Response](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Spring-Boot-REST-API-Development/springboot-upload-download-file-rest-api-example/src/main/java/com/hoangtien2k3/springboot/fileuploaddownload/payload/Response.java)
+                  * property
+                    * [FileStorageProperties](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Spring-Boot-REST-API-Development/springboot-upload-download-file-rest-api-example/src/main/java/com/hoangtien2k3/springboot/fileuploaddownload/property/FileStorageProperties.java)
+                  * service
+                    * [FileStorageService](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Spring-Boot-REST-API-Development/springboot-upload-download-file-rest-api-example/src/main/java/com/hoangtien2k3/springboot/fileuploaddownload/service/FileStorageService.java)
+                  * [SpringbootUploadDownloadFileRestApiExampleApplication](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Spring-Boot-REST-API-Development/springboot-upload-download-file-rest-api-example/src/main/java/com/hoangtien2k3/springboot/fileuploaddownload/SpringbootUploadDownloadFileRestApiExampleApplication.java)
+      * test
+                  * [SpringbootUploadDownloadFileRestApiExampleApplicationTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Spring-Boot-REST-API-Development/springboot-upload-download-file-rest-api-example/src/test/java/com/hoangtien2k3/springboot/fileuploaddownload/SpringbootUploadDownloadFileRestApiExampleApplicationTests.java)

@@ -32,8 +32,9 @@ public class EmployeeController {
     }
 
 
+    // @Valid và @RequestBody : xác thực và xử lý đầu vào dữ liệu
     // @RequestBody: spring sẽ liên kết phần body yêu cầu của HTTP đến tham số đó
-    // @Valid: 
+    // @Valid: kích hoạt việc kiểm tra hợp lệ (validation) trên đối tượng được gửi đến từ controller
     @PostMapping("/employees")
     public Employee createEmployee(@Valid @RequestBody Employee employee) {
         return employeeRepository.save(employee);
@@ -41,7 +42,8 @@ public class EmployeeController {
 
     @PutMapping("/employees/{id}")
     public ResponseEntity<Employee> updateEmployee(@PathVariable(value = "id") Long employeeId,
-                                                   @Valid @RequestBody Employee employeeDetails) throws ResourceNotFoundException {
+                                                   @Valid @RequestBody Employee employeeDetails)
+            throws ResourceNotFoundException {
         Employee employee = employeeRepository
                 .findById(employeeId)
                 .orElseThrow(() -> new ResourceNotFoundException("Employee not found for this id :: " + employeeId));
@@ -49,6 +51,7 @@ public class EmployeeController {
         employee.setEmailId(employeeDetails.getEmailId());
         employee.setLastName(employeeDetails.getLastName());
         employee.setFirstName(employeeDetails.getFirstName());
+
         final Employee updatedEmployee = employeeRepository.save(employee);
         return ResponseEntity.ok(updatedEmployee);
     }

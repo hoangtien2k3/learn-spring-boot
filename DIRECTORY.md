@@ -86,6 +86,24 @@
     * test
               * [SpringBoot2JpaCrudExampleApplicationTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/spring-boot2-jpa-crud-example/src/test/java/com/springbootlearning/springboot2jpacrudexample/SpringBoot2JpaCrudExampleApplicationTests.java)
 
+## springboot-crud-rest-api-validation
+    * main
+          * hoangtien2k3
+            * springbootcrudrestapivalidation
+              * controller
+                * [EmployeeController](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-crud-rest-api-validation/src/main/java/com/hoangtien2k3/springbootcrudrestapivalidation/controller/EmployeeController.java)
+              * exception
+                * [ErrorDetails](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-crud-rest-api-validation/src/main/java/com/hoangtien2k3/springbootcrudrestapivalidation/exception/ErrorDetails.java)
+                * [GlobalExceptionHandler](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-crud-rest-api-validation/src/main/java/com/hoangtien2k3/springbootcrudrestapivalidation/exception/GlobalExceptionHandler.java)
+                * [ResourceNotFoundException](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-crud-rest-api-validation/src/main/java/com/hoangtien2k3/springbootcrudrestapivalidation/exception/ResourceNotFoundException.java)
+              * model
+                * [Employee](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-crud-rest-api-validation/src/main/java/com/hoangtien2k3/springbootcrudrestapivalidation/model/Employee.java)
+              * repository
+                * [EmployeeRepository](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-crud-rest-api-validation/src/main/java/com/hoangtien2k3/springbootcrudrestapivalidation/repository/EmployeeRepository.java)
+              * [SpringbootCrudRestApiValidationApplication](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-crud-rest-api-validation/src/main/java/com/hoangtien2k3/springbootcrudrestapivalidation/SpringbootCrudRestApiValidationApplication.java)
+    * test
+              * [SpringbootCrudRestApiValidationApplicationTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-crud-rest-api-validation/src/test/java/com/hoangtien2k3/springbootcrudrestapivalidation/SpringbootCrudRestApiValidationApplicationTests.java)
+
 ## springboot-first-app
     * main
           * springboot

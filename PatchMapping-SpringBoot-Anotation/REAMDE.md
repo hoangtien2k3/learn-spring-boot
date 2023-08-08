@@ -1,8 +1,10 @@
 
-## @PatchMapping Spring Boot Example
+## [@PatchMapping Spring Boot Example]()
 
-- Phương thức `PATCH HTTP` được sử dụng để cập nhật một phần tài nguyên và chú thích @PatchMapping dùng để ánh xạ các yêu cầu HTTP PATCH vào các phương thức xử lý cụ thể.
-- `@PatchMapping` là chú thích tổng hợp đóng vai trò là lối tắt cho `@RequestMapping(method = RequestMethod.PATCH)`.
+- `@PatchMapping` thường được sử dụng khi bạn muốn cập nhật một phần của tài nguyên, chỉ gửi dữ liệu cần thiết để cập nhật.
+- `@PutMapping` thường được sử dụng khi bạn muốn cập nhật toàn bộ nội dung của tài nguyên, gửi toàn bộ dữ liệu của tài nguyên trong yêu cầu.
+
+- `@PatchMapping` viết tắt của `@RequestMapping(method = RequestMethod.PATCH)`.
 
 Chú thích [`@PatchMapping`]() có các phần tử tùy chọn sau
 - consumes : 
@@ -12,13 +14,5 @@ Chú thích [`@PatchMapping`]() có các phần tử tùy chọn sau
 - path 
 - produces 
 - value 
-
-
-## We will use Spring Data JPA to develop a repository layer and MySQL database at the backend. We will use the Postman client to test the REST API.
-
-
-
-
-
 
 

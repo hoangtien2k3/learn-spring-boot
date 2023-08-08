@@ -74,7 +74,15 @@ Các param trong `@ComponentScan`:
 - [500 Internal Server Error]() : Mã này biểu thị thông báo lỗi chung và cho biết đã xảy ra lỗi không mong muốn trên máy chủ và yêu cầu không thể thực hiện được.
 
 
+## @PatchMapping, @DeleteMapping, @GetMapping, @PutMapping ...
 
+@DeleteMapping có các phần tử tùy chọn sau, các Anotation khác cũng dùng các phần tử tùy chọn này.
 
-  
+1. [`consumes`](): Được sử dụng để chỉ định các định dạng phương thức này có thể xử lý. Nếu yêu cầu DELETE có định dạng không nằm trong danh sách được chỉ định ở consumes, thì phương thức sẽ không được gọi.
+2. [`headers`](): Cho phép bạn chỉ định các header của yêu cầu HTTP mà phải tồn tại để phương thức DELETE được gọi.
+3. [`name`](): Được sử dụng để đặt tên cho phương thức, điều này có thể hữu ích trong việc tạo các bản đồ ánh xạ URL tùy chỉnh.
+4. [`path`](): Chỉ định một đường dẫn URI mà phải khớp với yêu cầu DELETE để phương thức xử lý.
+5. [`produces`](): Được sử dụng để chỉ định các định dạng phản hồi mà phương thức này có thể tạo ra. Nếu yêu cầu DELETE không thể chấp nhận một định dạng nằm trong danh sách produces, thì phương thức sẽ không được gọi.
+6. [`value`](): Định nghĩa một hoặc nhiều đường dẫn URI mà phương thức này sẽ xử lý.
+
 

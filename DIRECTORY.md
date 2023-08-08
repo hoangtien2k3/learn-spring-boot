@@ -66,9 +66,35 @@
                   * impl
                     * [CloudVendorServiceImplTest](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Demo-Api-SpringBoot/restapi/src/test/java/com/SpringBoot/restapi/service/impl/CloudVendorServiceImplTest.java)
 
+## PatchMapping-SpringBoot-Anotation
+  * src
+    * main
+      * java
+        * com
+          * hoangtien2k3
+            * PatchMappingSpringBootAnotation
+              * dto
+                * [TodoDto](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/PatchMapping-SpringBoot-Anotation/src/main/java/com/hoangtien2k3/PatchMappingSpringBootAnotation/dto/TodoDto.java)
+              * exception
+                * [ResourceNotFoundException](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/PatchMapping-SpringBoot-Anotation/src/main/java/com/hoangtien2k3/PatchMappingSpringBootAnotation/exception/ResourceNotFoundException.java)
+              * model
+                * [Todo](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/PatchMapping-SpringBoot-Anotation/src/main/java/com/hoangtien2k3/PatchMappingSpringBootAnotation/model/Todo.java)
+              * [PatchMappingSpringBootAnotationApplication](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/PatchMapping-SpringBoot-Anotation/src/main/java/com/hoangtien2k3/PatchMappingSpringBootAnotation/PatchMappingSpringBootAnotationApplication.java)
+              * repository
+                * [TodoReposiroty](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/PatchMapping-SpringBoot-Anotation/src/main/java/com/hoangtien2k3/PatchMappingSpringBootAnotation/repository/TodoReposiroty.java)
+              * service
+                * impl
+                  * [TodoServiceImpl](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/PatchMapping-SpringBoot-Anotation/src/main/java/com/hoangtien2k3/PatchMappingSpringBootAnotation/service/impl/TodoServiceImpl.java)
+                * [TodoService](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/PatchMapping-SpringBoot-Anotation/src/main/java/com/hoangtien2k3/PatchMappingSpringBootAnotation/service/TodoService.java)
+    * test
+              * [PatchMappingSpringBootAnotationApplicationTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/PatchMapping-SpringBoot-Anotation/src/test/java/com/hoangtien2k3/PatchMappingSpringBootAnotation/PatchMappingSpringBootAnotationApplicationTests.java)
+
 ## Spring-Boot-REST-API-Development
   * spring-boot2-jpa-crud-example
+    * src
       * main
+        * java
+          * com
             * springbootlearning
               * springboot2jpacrudexample
                 * controller

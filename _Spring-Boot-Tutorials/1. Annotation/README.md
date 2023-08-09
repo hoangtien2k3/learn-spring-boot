@@ -431,5 +431,109 @@ public class MyApplication {
 }
 ```
 
+## Một số Anotation thiết lập mối quan hệ trong spirng boot
+
+- [@OneToOne()]():  là một Annotation được sử dụng trong JPA (Java Persistence API) để thiết lập mối quan hệ `một-một` giữa hai entity và định nghĩa các hành động "cascade" (lan truyền) từ entity chủ `(owner)` đến entity liên quan `(dependent)`.
+
+```java
+@Entity
+public class Author {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    
+    private String name;
+
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "author_info_id")
+    private AuthorInfo authorInfo;
+    
+    // ... getters and setters
+}
+
+@Entity
+public class AuthorInfo {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    
+    private String bio;
+    
+    // ... getters and setters
+}
+```
+
+- [@JoinColumn()]():  sử dụng để chỉ định tên của cột `khóa ngoại (foreign key)` trong bảng hiện tại (entity chủ) mà sẽ liên kết đến cột khóa chính (primary key) trong bảng liên quan (entity liên quan).
+
+```java
+@Entity
+public class Author {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    
+    private String name;
+
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "author_info_id") // Đây là phần quan trọng
+    private AuthorInfo authorInfo;
+    
+    // ... getters and setters
+}
+
+@Entity
+public class AuthorInfo {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    
+    private String bio;
+    
+    // ... getters and setters
+}
+```
+
+- [@OneToMany](): một Annotation trong JPA (Java Persistence API) được sử dụng để thiết lập mối quan hệ một-nhiều giữa hai entity và định nghĩa các hành động "cascade" (lan truyền) từ entity chủ (owner) đến entity liên quan (dependent).
+
+```java
+public class User {
+    private Long id;
+    private String username;
+
+    @JsonIgnore
+    private String password;
+    
+    // ... getters and setters
+}
+```
+
+
+- [@JsonIgnore](): thì thuộc tính đó sẽ bị bỏ qua khi chuyển đổi đối tượng Java thành JSON, tức là nó sẽ không được bao gồm trong kết quả JSON đầu ra.
+
+   - Điều này thường được sử dụng để bảo vệ thông tin nhạy cảm hoặc không cần thiết khỏi việc hiển thị trong JSON, như trong trường hợp mật khẩu như trong ví dụ trên.
+
+
+
+
+- [@Data](): Khi bạn đánh dấu một lớp bằng @Data, Lombok sẽ tự động sinh các phương thức cơ bản như sau:
+
+  - Getter cho tất cả các trường (fields). 
+  - Setter cho tất cả các trường (fields).
+  - Phương thức toString để hiển thị thông tin của đối tượng dưới dạng chuỗi.
+  - Phương thức equals và hashCode để so sánh hai đối tượng dựa trên các trường.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

@@ -521,11 +521,69 @@ public class User {
   - Setter cho tất cả các trường (fields).
   - Phương thức toString để hiển thị thông tin của đối tượng dưới dạng chuỗi.
   - Phương thức equals và hashCode để so sánh hai đối tượng dựa trên các trường.
+ 
+```java
+@Data
+public class User {
+    private Long id;
+    private String username;
+    private String email;
+}
+```
+
+- [@Embeddable]():  đánh dấu bằng @Embeddable để xác định rằng nó là một đối tượng được nhúng. Trong lớp User, trường address được đánh dấu bằng @Embedded, cho biết rằng các trường của đối tượng Address sẽ được lưu trữ trong bảng User thay vì tạo ra bảng riêng biệt.
+
+```java
+@Embeddable
+public class Address {
+    private String street;
+    private String city;
+    private String zipCode;
+
+    // ... constructors, getters, setters
+}
+
+@Entity
+public class User {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    private String username;
+
+    @Embedded
+    private Address address;
+
+    // ... other fields, getters, setters
+}
+```
 
 
+- [@ElementCollection]():  Annotation này cho biết rằng trường productList là một tập hợp (collection) của các đối tượng Product. Điều này ám chỉ rằng Product không phải là một entity độc lập có thể được lưu trữ trong bảng riêng của nó, mà nó là một phần của entity chứa nó.
 
+```java
+@Entity
+public class Order {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
+    // ...
 
+    @ElementCollection
+    private List<Product> productList;
+
+    // ...
+}
+
+@Embeddable
+public class Product {
+    private String name;
+    private double price;
+
+    // ... constructors, getters, setters
+}
+```
 
 
 

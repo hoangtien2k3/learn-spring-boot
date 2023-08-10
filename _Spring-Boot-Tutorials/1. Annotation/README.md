@@ -586,10 +586,16 @@ public class Product {
 ```
 
 
+## Hibernate
 
+- [@CreationTimestamp](): được sử dụng để tự động gán thời gian tạo.
+- [@Temporal(TemporalType.TIMESTAMP)](): xác định rằng trường createdAt sẽ được ánh xạ vào một kiểu thời gian TIMESTAMP trong cơ sở dữ liệu.
 
-
-
+Có ba kiểu thời gian mà @Temporal hỗ trợ:
+ 
+  - TemporalType.DATE: Dùng cho ngày, chỉ lưu phần ngày trong cơ sở dữ liệu.
+  - TemporalType.TIME: Dùng cho thời gian, chỉ lưu phần thời gian trong cơ sở dữ liệu.
+  - TemporalType.TIMESTAMP: Dùng cho ngày và thời gian, lưu cả phần ngày và thời gian trong cơ sở dữ liệu.
 
 
 

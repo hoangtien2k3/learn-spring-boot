@@ -590,14 +590,14 @@ public class Product {
 
 - [@CreationTimestamp](): được sử dụng để tự động gán thời gian tạo.
 - [@Temporal(TemporalType.TIMESTAMP)](): xác định rằng trường createdAt sẽ được ánh xạ vào một kiểu thời gian TIMESTAMP trong cơ sở dữ liệu.
-
-Có ba kiểu thời gian mà @Temporal hỗ trợ:
- 
-  - TemporalType.DATE: Dùng cho ngày, chỉ lưu phần ngày trong cơ sở dữ liệu.
-  - TemporalType.TIME: Dùng cho thời gian, chỉ lưu phần thời gian trong cơ sở dữ liệu.
-  - TemporalType.TIMESTAMP: Dùng cho ngày và thời gian, lưu cả phần ngày và thời gian trong cơ sở dữ liệu.
+  - `TemporalType.DATE`: Dùng cho ngày, chỉ lưu phần ngày trong cơ sở dữ liệu.
+  - `TemporalType.TIME`: Dùng cho thời gian, chỉ lưu phần thời gian trong cơ sở dữ liệu.
+  - `TemporalType.TIMESTAMP`: Dùng cho ngày và thời gian, lưu cả phần ngày và thời gian trong cơ sở dữ liệu.
 
 
-
+- [@Transactional](): 
+   - Các hoạt động trong phương thức sẽ thực hiện trong một khung giao dịch.
+   - Nếu mọi thứ thành công, thay đổi sẽ được xác nhận (commit) và lưu vào cơ sở dữ liệu.
+   - Nếu xảy ra lỗi, toàn bộ giao dịch sẽ bị hủy (rollback), và dữ liệu sẽ được giữ nguyên như trước khi thực hiện giao dịch.
 
 

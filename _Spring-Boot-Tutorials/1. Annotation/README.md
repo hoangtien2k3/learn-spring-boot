@@ -605,5 +605,26 @@ public class Product {
 
 - [@CreateDate](): Tương tự như @CreateBy, đây cũng có thể là một custom annotation được sử dụng để đánh dấu trường trong đối tượng mà bạn muốn lưu thông tin về thời gian tạo. 
 
+- [@LastModifiedBy](): Khai báo một trường là trường đại diện cho ngày thực thể chứa trường được sửa đổi gần đây.
+
+- [@MappedSuperclass](): Đây là một annotation được sử dụng để chỉ định rằng một lớp (class) là một `"lớp cơ sở ánh xạ" (mapped superclass)`. Lớp cơ sở ánh xạ này `không được ánh xạ trực tiếp vào cơ sở dữ liệu` như một entity (đối tượng ánh xạ), `nhưng các lớp con` có thể `kế thừa từ lớp cơ sở ánh xạ` và `sử dụng các thuộc tính và phương thức được định nghĩa trong lớp cơ sở ánh xạ`. Điều này cho phép bạn chia sẻ logic và các thuộc tính chung giữa các lớp con.
+
+```java
+@MappedSuperclass
+public class BaseEntity {
+    // Các trường và phương thức chung cho tất cả các entity
+}
+```
+
+- [@EntityListeners(AuditingEntityListener.class)](): Đây là một annotation được sử dụng để chỉ định rằng một entity sẽ lắng nghe (listen to) các sự kiện thay đổi và thực hiện các hành động liên quan. Trong trường hợp này, AuditingEntityListener là một listener được sử dụng để theo dõi thay đổi của các entity liên quan đến thời gian tạo và thời gian cập nhật.
+
+```java
+@Entity
+@EntityListeners(AuditingEntityListener.class)
+public class MyEntity extends BaseEntity {
+    // Các trường và phương thức riêng cho entity
+}
+```
+
 
 

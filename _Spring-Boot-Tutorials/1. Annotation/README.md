@@ -601,3 +601,9 @@ public class Product {
    - Nếu xảy ra lỗi, toàn bộ giao dịch sẽ bị hủy (rollback), và dữ liệu sẽ được giữ nguyên như trước khi thực hiện giao dịch.
 
 
+- [@CreateBy](): để đánh dấu trường trong đối tượng (entity) mà bạn muốn lưu thông tin về người tạo. Bạn có thể tự định nghĩa annotation này và viết một logic để tự động gán giá trị của người tạo vào trường khi lưu vào cơ sở dữ liệu. 
+
+- [@CreateDate](): Tương tự như @CreateBy, đây cũng có thể là một custom annotation được sử dụng để đánh dấu trường trong đối tượng mà bạn muốn lưu thông tin về thời gian tạo. 
+
+
+

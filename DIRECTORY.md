@@ -244,6 +244,17 @@
     * test
               * [SpringbootJpaRestApiApplicationTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-jpa-rest-api/src/test/java/com/learnspringboot/springbootjparestapi/SpringbootJpaRestApiApplicationTests.java)
 
+## SpringBoot-Logging-SLF4j-Logback-LOG4j2
+    * main
+          * hoangtien2k3
+            * [Article](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/SpringBoot-Logging-SLF4j-Logback-LOG4j2/src/main/java/com/hoangtien2k3/Article.java)
+            * [ArticleController](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/SpringBoot-Logging-SLF4j-Logback-LOG4j2/src/main/java/com/hoangtien2k3/ArticleController.java)
+            * [ArticleService](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/SpringBoot-Logging-SLF4j-Logback-LOG4j2/src/main/java/com/hoangtien2k3/ArticleService.java)
+            * [SpringBootLoggingSlf4jLogbackLog4j2Application](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/SpringBoot-Logging-SLF4j-Logback-LOG4j2/src/main/java/com/hoangtien2k3/SpringBootLoggingSlf4jLogbackLog4j2Application.java)
+            * [SwaggerConfiguration](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/SpringBoot-Logging-SLF4j-Logback-LOG4j2/src/main/java/com/hoangtien2k3/SwaggerConfiguration.java)
+    * test
+            * [SpringBootLoggingSlf4jLogbackLog4j2ApplicationTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/SpringBoot-Logging-SLF4j-Logback-LOG4j2/src/test/java/com/hoangtien2k3/SpringBootLoggingSlf4jLogbackLog4j2ApplicationTests.java)
+
 ## springboot-mysql-jpa-hibernate-restfull-crud-api
     * main
           * springbootlearning
@@ -279,9 +290,16 @@
     * test
               * [SpringbootRestfulWebservicesApplicationTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-restful-webservices/src/test/java/com/springbootlearning/springbootrestfulwebservices/SpringbootRestfulWebservicesApplicationTests.java)
 
-## springboot-Search-REST-API-Jpa-Mysql
+## SpringBoot-Scheduling-Tasks-Example
     * main
           * hoangtien2k3
+            * [ScheduledTasks](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/SpringBoot-Scheduling-Tasks-Example/src/main/java/com/hoangtien2k3/ScheduledTasks.java)
+            * [SpringBootSchedulingTasksExampleApplication](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/SpringBoot-Scheduling-Tasks-Example/src/main/java/com/hoangtien2k3/SpringBootSchedulingTasksExampleApplication.java)
+    * test
+            * [SpringBootSchedulingTasksExampleApplicationTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/SpringBoot-Scheduling-Tasks-Example/src/test/java/com/hoangtien2k3/SpringBootSchedulingTasksExampleApplicationTests.java)
+
+## springboot-Search-REST-API-Jpa-Mysql
+    * main
             * springbootSearchRESTAPIJpaMysql
               * controller
                 * [ProductController](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-Search-REST-API-Jpa-Mysql/src/main/java/com/hoangtien2k3/springbootSearchRESTAPIJpaMysql/controller/ProductController.java)
@@ -349,3 +367,18 @@
                 * [SpringbootUploadDownloadFileRestApiExampleApplication](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-upload-download-file-rest-api-example/src/main/java/com/hoangtien2k3/springboot/fileuploaddownload/SpringbootUploadDownloadFileRestApiExampleApplication.java)
     * test
                 * [SpringbootUploadDownloadFileRestApiExampleApplicationTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-upload-download-file-rest-api-example/src/test/java/com/hoangtien2k3/springboot/fileuploaddownload/SpringbootUploadDownloadFileRestApiExampleApplicationTests.java)
+
+## springboot-validation
+    * main
+            * controller
+              * [UserController](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-validation/src/main/java/com/hoangtien2k3/controller/UserController.java)
+              * [ValidationHandler](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-validation/src/main/java/com/hoangtien2k3/controller/ValidationHandler.java)
+            * model
+              * [User](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-validation/src/main/java/com/hoangtien2k3/model/User.java)
+            * repository
+              * [UserRepository](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-validation/src/main/java/com/hoangtien2k3/repository/UserRepository.java)
+            * service
+              * [UserService](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-validation/src/main/java/com/hoangtien2k3/service/UserService.java)
+            * [SpringbootValidationApplication](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-validation/src/main/java/com/hoangtien2k3/SpringbootValidationApplication.java)
+    * test
+            * [SpringbootValidationApplicationTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-validation/src/test/java/com/hoangtien2k3/SpringbootValidationApplicationTests.java)

@@ -627,4 +627,18 @@ public class MyEntity extends BaseEntity {
 ```
 
 
+## Validations in Spring boot Anotation
+
+- [@NotNull](): Đảm bảo rằng giá trị không được null.
+- [@NotEmpty](): Đảm bảo rằng chuỗi, mảng hoặc bất kỳ Collection nào không được null và không rỗng.
+- [@NotBlank](): Đảm bảo rằng chuỗi không được null, không rỗng và không chỉ chứa các khoảng trắng.
+- [@Min(value)](): Đảm bảo rằng giá trị phải lớn hơn hoặc bằng giá trị tối thiểu chỉ định.
+- [@Max(value)](): Đảm bảo rằng giá trị phải nhỏ hơn hoặc bằng giá trị tối đa chỉ định.
+- [@Size(min, max)](): Đảm bảo rằng kích thước của chuỗi, mảng hoặc Collection nằm trong khoảng chỉ định.
+- [@Email](): Đảm bảo rằng giá trị là một địa chỉ email hợp lệ.
+- [@Pattern(regex)](): Đảm bảo rằng giá trị khớp với biểu thức chính quy chỉ định.
+- [@Valid](): Sử dụng trong trường hợp kiểm tra dữ liệu lồng nhau (nested objects). Điều này cho phép kiểm tra dữ liệu trong các đối tượng con.
+
+
+
 

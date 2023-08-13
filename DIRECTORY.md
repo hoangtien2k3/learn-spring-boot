@@ -170,6 +170,25 @@
     * test
               * [SpringbootCrudRestApiValidationApplicationTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-crud-rest-api-validation/src/test/java/com/hoangtien2k3/springbootcrudrestapivalidation/SpringbootCrudRestApiValidationApplicationTests.java)
 
+## springboot-dto-tutorials
+    * main
+            * springboot
+              * controller
+                * [UserController](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-dto-tutorials/src/main/java/com/hoangtien2k3/springboot/controller/UserController.java)
+              * dto
+                * [UserLocationDTO](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-dto-tutorials/src/main/java/com/hoangtien2k3/springboot/dto/UserLocationDTO.java)
+              * model
+                * [Location](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-dto-tutorials/src/main/java/com/hoangtien2k3/springboot/model/Location.java)
+                * [User](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-dto-tutorials/src/main/java/com/hoangtien2k3/springboot/model/User.java)
+              * repository
+                * [LocationRepository](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-dto-tutorials/src/main/java/com/hoangtien2k3/springboot/repository/LocationRepository.java)
+                * [UserRepository](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-dto-tutorials/src/main/java/com/hoangtien2k3/springboot/repository/UserRepository.java)
+              * service
+                * [UserService](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-dto-tutorials/src/main/java/com/hoangtien2k3/springboot/service/UserService.java)
+              * [SpringbootDtoTutorialsApplication](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-dto-tutorials/src/main/java/com/hoangtien2k3/springboot/SpringbootDtoTutorialsApplication.java)
+    * test
+              * [SpringbootDtoTutorialsApplicationTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-dto-tutorials/src/test/java/com/hoangtien2k3/springboot/SpringbootDtoTutorialsApplicationTests.java)
+
 ## springboot-first-app
     * main
           * springboot

@@ -189,6 +189,25 @@
     * test
               * [SpringbootDtoTutorialsApplicationTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-dto-tutorials/src/test/java/com/hoangtien2k3/springboot/SpringbootDtoTutorialsApplicationTests.java)
 
+## SpringBoot-DTO-Validation-Example
+    * main
+            * SpringBootDTOValidationExample
+              * controller
+                * [UserController](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/SpringBoot-DTO-Validation-Example/src/main/java/com/hoangtien2k3/SpringBootDTOValidationExample/controller/UserController.java)
+              * dto
+                * [UserDto](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/SpringBoot-DTO-Validation-Example/src/main/java/com/hoangtien2k3/SpringBootDTOValidationExample/dto/UserDto.java)
+              * exception
+                * [ValidationHandler](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/SpringBoot-DTO-Validation-Example/src/main/java/com/hoangtien2k3/SpringBootDTOValidationExample/exception/ValidationHandler.java)
+              * model
+                * [User](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/SpringBoot-DTO-Validation-Example/src/main/java/com/hoangtien2k3/SpringBootDTOValidationExample/model/User.java)
+              * repository
+                * [UserRepository](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/SpringBoot-DTO-Validation-Example/src/main/java/com/hoangtien2k3/SpringBootDTOValidationExample/repository/UserRepository.java)
+              * service
+                * [UserService](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/SpringBoot-DTO-Validation-Example/src/main/java/com/hoangtien2k3/SpringBootDTOValidationExample/service/UserService.java)
+              * [SpringBootDtoValidationExampleApplication](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/SpringBoot-DTO-Validation-Example/src/main/java/com/hoangtien2k3/SpringBootDTOValidationExample/SpringBootDtoValidationExampleApplication.java)
+    * test
+              * [SpringBootDtoValidationExampleApplicationTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/SpringBoot-DTO-Validation-Example/src/test/java/com/hoangtien2k3/SpringBootDTOValidationExample/SpringBootDtoValidationExampleApplicationTests.java)
+
 ## springboot-first-app
     * main
           * springboot

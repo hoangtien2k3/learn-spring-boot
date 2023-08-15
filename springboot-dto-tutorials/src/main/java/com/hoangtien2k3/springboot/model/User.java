@@ -24,5 +24,5 @@ public class User {
 
     @ManyToOne(fetch = FetchType.EAGER, optional = false)
     @JoinColumn(name = "location_id")
-    private Location location;
+    private Location location;  // HAS-A
 }

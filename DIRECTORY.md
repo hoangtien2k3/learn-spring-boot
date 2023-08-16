@@ -91,6 +91,62 @@
                   * impl
                     * [CloudVendorServiceImplTest](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Demo-Api-SpringBoot/restapi/src/test/java/com/SpringBoot/restapi/service/impl/CloudVendorServiceImplTest.java)
 
+## Exception-Handling-Mappers-And-Validations
+  * springboot-dto-tutorials
+      * main
+            * hoangtien2k3
+              * springboot
+                * controller
+                  * [UserController](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Exception-Handling-Mappers-And-Validations/springboot-dto-tutorials/src/main/java/com/hoangtien2k3/springboot/controller/UserController.java)
+                * dto
+                  * [UserLocationDTO](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Exception-Handling-Mappers-And-Validations/springboot-dto-tutorials/src/main/java/com/hoangtien2k3/springboot/dto/UserLocationDTO.java)
+                * model
+                  * [Location](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Exception-Handling-Mappers-And-Validations/springboot-dto-tutorials/src/main/java/com/hoangtien2k3/springboot/model/Location.java)
+                  * [User](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Exception-Handling-Mappers-And-Validations/springboot-dto-tutorials/src/main/java/com/hoangtien2k3/springboot/model/User.java)
+                * repository
+                  * [LocationRepository](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Exception-Handling-Mappers-And-Validations/springboot-dto-tutorials/src/main/java/com/hoangtien2k3/springboot/repository/LocationRepository.java)
+                  * [UserRepository](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Exception-Handling-Mappers-And-Validations/springboot-dto-tutorials/src/main/java/com/hoangtien2k3/springboot/repository/UserRepository.java)
+                * service
+                  * [UserService](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Exception-Handling-Mappers-And-Validations/springboot-dto-tutorials/src/main/java/com/hoangtien2k3/springboot/service/UserService.java)
+                * [SpringbootDtoTutorialsApplication](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Exception-Handling-Mappers-And-Validations/springboot-dto-tutorials/src/main/java/com/hoangtien2k3/springboot/SpringbootDtoTutorialsApplication.java)
+      * test
+                * [SpringbootDtoTutorialsApplicationTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Exception-Handling-Mappers-And-Validations/springboot-dto-tutorials/src/test/java/com/hoangtien2k3/springboot/SpringbootDtoTutorialsApplicationTests.java)
+  * SpringBoot-DTO-Validation-Example
+      * main
+              * SpringBootDTOValidationExample
+                * controller
+                  * [UserController](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Exception-Handling-Mappers-And-Validations/SpringBoot-DTO-Validation-Example/src/main/java/com/hoangtien2k3/SpringBootDTOValidationExample/controller/UserController.java)
+                * dto
+                  * [UserDto](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Exception-Handling-Mappers-And-Validations/SpringBoot-DTO-Validation-Example/src/main/java/com/hoangtien2k3/SpringBootDTOValidationExample/dto/UserDto.java)
+                * exception
+                  * [ValidationHandler](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Exception-Handling-Mappers-And-Validations/SpringBoot-DTO-Validation-Example/src/main/java/com/hoangtien2k3/SpringBootDTOValidationExample/exception/ValidationHandler.java)
+                * model
+                  * [User](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Exception-Handling-Mappers-And-Validations/SpringBoot-DTO-Validation-Example/src/main/java/com/hoangtien2k3/SpringBootDTOValidationExample/model/User.java)
+                * repository
+                  * [UserRepository](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Exception-Handling-Mappers-And-Validations/SpringBoot-DTO-Validation-Example/src/main/java/com/hoangtien2k3/SpringBootDTOValidationExample/repository/UserRepository.java)
+                * service
+                  * [UserService](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Exception-Handling-Mappers-And-Validations/SpringBoot-DTO-Validation-Example/src/main/java/com/hoangtien2k3/SpringBootDTOValidationExample/service/UserService.java)
+                * [SpringBootDtoValidationExampleApplication](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Exception-Handling-Mappers-And-Validations/SpringBoot-DTO-Validation-Example/src/main/java/com/hoangtien2k3/SpringBootDTOValidationExample/SpringBootDtoValidationExampleApplication.java)
+      * test
+                * [SpringBootDtoValidationExampleApplicationTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Exception-Handling-Mappers-And-Validations/SpringBoot-DTO-Validation-Example/src/test/java/com/hoangtien2k3/SpringBootDTOValidationExample/SpringBootDtoValidationExampleApplicationTests.java)
+  * springboot-restful-webservices
+      * main
+            * springbootlearning
+              * springbootrestfulwebservices
+                * controller
+                  * [UserController](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Exception-Handling-Mappers-And-Validations/springboot-restful-webservices/src/main/java/com/springbootlearning/springbootrestfulwebservices/controller/UserController.java)
+                * entity
+                  * [User](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Exception-Handling-Mappers-And-Validations/springboot-restful-webservices/src/main/java/com/springbootlearning/springbootrestfulwebservices/entity/User.java)
+                * repository
+                  * [UserRepository](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Exception-Handling-Mappers-And-Validations/springboot-restful-webservices/src/main/java/com/springbootlearning/springbootrestfulwebservices/repository/UserRepository.java)
+                * service
+                  * impl
+                    * [UserServiceImpl](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Exception-Handling-Mappers-And-Validations/springboot-restful-webservices/src/main/java/com/springbootlearning/springbootrestfulwebservices/service/impl/UserServiceImpl.java)
+                  * [UserService](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Exception-Handling-Mappers-And-Validations/springboot-restful-webservices/src/main/java/com/springbootlearning/springbootrestfulwebservices/service/UserService.java)
+                * [SpringbootRestfulWebservicesApplication](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Exception-Handling-Mappers-And-Validations/springboot-restful-webservices/src/main/java/com/springbootlearning/springbootrestfulwebservices/SpringbootRestfulWebservicesApplication.java)
+      * test
+                * [SpringbootRestfulWebservicesApplicationTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Exception-Handling-Mappers-And-Validations/springboot-restful-webservices/src/test/java/com/springbootlearning/springbootrestfulwebservices/SpringbootRestfulWebservicesApplicationTests.java)
+
 ## PatchMapping-SpringBoot-Anotation
   * src
     * main
@@ -116,8 +172,43 @@
     * test
               * [PatchMappingSpringBootAnotationApplicationTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/PatchMapping-SpringBoot-Anotation/src/test/java/com/hoangtien2k3/PatchMappingSpringBootAnotation/PatchMappingSpringBootAnotationApplicationTests.java)
 
+## Securing-Spring-Boot-REST-APIs-Using-Spring-Security
+  * SpringBoot-Spring-Security-JWT-MySQL-Database-Tutorial
+    * src
+      * main
+        * java
+          * com
+            * hoangtien2k3
+              * configuration
+                * [SpringSecurityConfig](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Securing-Spring-Boot-REST-APIs-Using-Spring-Security/SpringBoot-Spring-Security-JWT-MySQL-Database-Tutorial/src/main/java/com/hoangtien2k3/configuration/SpringSecurityConfig.java)
+              * controller
+                * [AuthController](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Securing-Spring-Boot-REST-APIs-Using-Spring-Security/SpringBoot-Spring-Security-JWT-MySQL-Database-Tutorial/src/main/java/com/hoangtien2k3/controller/AuthController.java)
+              * dto
+                * [LoginDto](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Securing-Spring-Boot-REST-APIs-Using-Spring-Security/SpringBoot-Spring-Security-JWT-MySQL-Database-Tutorial/src/main/java/com/hoangtien2k3/dto/LoginDto.java)
+              * model
+                * [Role](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Securing-Spring-Boot-REST-APIs-Using-Spring-Security/SpringBoot-Spring-Security-JWT-MySQL-Database-Tutorial/src/main/java/com/hoangtien2k3/model/Role.java)
+                * [User](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Securing-Spring-Boot-REST-APIs-Using-Spring-Security/SpringBoot-Spring-Security-JWT-MySQL-Database-Tutorial/src/main/java/com/hoangtien2k3/model/User.java)
+              * repository
+                * [RoleRepository](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Securing-Spring-Boot-REST-APIs-Using-Spring-Security/SpringBoot-Spring-Security-JWT-MySQL-Database-Tutorial/src/main/java/com/hoangtien2k3/repository/RoleRepository.java)
+                * [UserRepository](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Securing-Spring-Boot-REST-APIs-Using-Spring-Security/SpringBoot-Spring-Security-JWT-MySQL-Database-Tutorial/src/main/java/com/hoangtien2k3/repository/UserRepository.java)
+              * security
+                * [JwtAuthenticationEntryPoint](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Securing-Spring-Boot-REST-APIs-Using-Spring-Security/SpringBoot-Spring-Security-JWT-MySQL-Database-Tutorial/src/main/java/com/hoangtien2k3/security/JwtAuthenticationEntryPoint.java)
+                * [JwtAuthenticationFilter](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Securing-Spring-Boot-REST-APIs-Using-Spring-Security/SpringBoot-Spring-Security-JWT-MySQL-Database-Tutorial/src/main/java/com/hoangtien2k3/security/JwtAuthenticationFilter.java)
+                * [JwtTokenProvider](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Securing-Spring-Boot-REST-APIs-Using-Spring-Security/SpringBoot-Spring-Security-JWT-MySQL-Database-Tutorial/src/main/java/com/hoangtien2k3/security/JwtTokenProvider.java)
+              * service
+                * [AuthService](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Securing-Spring-Boot-REST-APIs-Using-Spring-Security/SpringBoot-Spring-Security-JWT-MySQL-Database-Tutorial/src/main/java/com/hoangtien2k3/service/AuthService.java)
+                * [CustomUserDetailsService](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Securing-Spring-Boot-REST-APIs-Using-Spring-Security/SpringBoot-Spring-Security-JWT-MySQL-Database-Tutorial/src/main/java/com/hoangtien2k3/service/CustomUserDetailsService.java)
+                * impl
+                  * [AuthServiceImpl](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Securing-Spring-Boot-REST-APIs-Using-Spring-Security/SpringBoot-Spring-Security-JWT-MySQL-Database-Tutorial/src/main/java/com/hoangtien2k3/service/impl/AuthServiceImpl.java)
+              * [SpringBootSpringSecurityJwtMySqlDatabaseTutorialApplication](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Securing-Spring-Boot-REST-APIs-Using-Spring-Security/SpringBoot-Spring-Security-JWT-MySQL-Database-Tutorial/src/main/java/com/hoangtien2k3/SpringBootSpringSecurityJwtMySqlDatabaseTutorialApplication.java)
+      * test
+              * [SpringBootSpringSecurityJwtMySqlDatabaseTutorialApplicationTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Securing-Spring-Boot-REST-APIs-Using-Spring-Security/SpringBoot-Spring-Security-JWT-MySQL-Database-Tutorial/src/test/java/com/hoangtien2k3/SpringBootSpringSecurityJwtMySqlDatabaseTutorialApplicationTests.java)
+
 ## spring-boot2-jpa-crud-example
+  * src
     * main
+      * java
+        * com
           * springbootlearning
             * springboot2jpacrudexample
               * controller
@@ -134,9 +225,16 @@
     * test
               * [SpringBoot2JpaCrudExampleApplicationTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/spring-boot2-jpa-crud-example/src/test/java/com/springbootlearning/springboot2jpacrudexample/SpringBoot2JpaCrudExampleApplicationTests.java)
 
-## SpringBoot-CRUD-Example-with-H2-Database
+## Spring-Security-Basic-Authentication
     * main
           * hoangtien2k3
+            * SpringSecurityBasicAuthentication
+              * [SpringSecurityBasicAuthenticationApplication](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Spring-Security-Basic-Authentication/src/main/java/com/hoangtien2k3/SpringSecurityBasicAuthentication/SpringSecurityBasicAuthenticationApplication.java)
+    * test
+              * [SpringSecurityBasicAuthenticationApplicationTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Spring-Security-Basic-Authentication/src/test/java/com/hoangtien2k3/SpringSecurityBasicAuthentication/SpringSecurityBasicAuthenticationApplicationTests.java)
+
+## SpringBoot-CRUD-Example-with-H2-Database
+    * main
             * controller
               * [ProductController](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/SpringBoot-CRUD-Example-with-H2-Database/src/main/java/com/hoangtien2k3/controller/ProductController.java)
             * exception
@@ -169,44 +267,6 @@
               * [SpringbootCrudRestApiValidationApplication](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-crud-rest-api-validation/src/main/java/com/hoangtien2k3/springbootcrudrestapivalidation/SpringbootCrudRestApiValidationApplication.java)
     * test
               * [SpringbootCrudRestApiValidationApplicationTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-crud-rest-api-validation/src/test/java/com/hoangtien2k3/springbootcrudrestapivalidation/SpringbootCrudRestApiValidationApplicationTests.java)
-
-## springboot-dto-tutorials
-    * main
-            * springboot
-              * controller
-                * [UserController](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-dto-tutorials/src/main/java/com/hoangtien2k3/springboot/controller/UserController.java)
-              * dto
-                * [UserLocationDTO](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-dto-tutorials/src/main/java/com/hoangtien2k3/springboot/dto/UserLocationDTO.java)
-              * model
-                * [Location](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-dto-tutorials/src/main/java/com/hoangtien2k3/springboot/model/Location.java)
-                * [User](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-dto-tutorials/src/main/java/com/hoangtien2k3/springboot/model/User.java)
-              * repository
-                * [LocationRepository](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-dto-tutorials/src/main/java/com/hoangtien2k3/springboot/repository/LocationRepository.java)
-                * [UserRepository](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-dto-tutorials/src/main/java/com/hoangtien2k3/springboot/repository/UserRepository.java)
-              * service
-                * [UserService](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-dto-tutorials/src/main/java/com/hoangtien2k3/springboot/service/UserService.java)
-              * [SpringbootDtoTutorialsApplication](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-dto-tutorials/src/main/java/com/hoangtien2k3/springboot/SpringbootDtoTutorialsApplication.java)
-    * test
-              * [SpringbootDtoTutorialsApplicationTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-dto-tutorials/src/test/java/com/hoangtien2k3/springboot/SpringbootDtoTutorialsApplicationTests.java)
-
-## SpringBoot-DTO-Validation-Example
-    * main
-            * SpringBootDTOValidationExample
-              * controller
-                * [UserController](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/SpringBoot-DTO-Validation-Example/src/main/java/com/hoangtien2k3/SpringBootDTOValidationExample/controller/UserController.java)
-              * dto
-                * [UserDto](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/SpringBoot-DTO-Validation-Example/src/main/java/com/hoangtien2k3/SpringBootDTOValidationExample/dto/UserDto.java)
-              * exception
-                * [ValidationHandler](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/SpringBoot-DTO-Validation-Example/src/main/java/com/hoangtien2k3/SpringBootDTOValidationExample/exception/ValidationHandler.java)
-              * model
-                * [User](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/SpringBoot-DTO-Validation-Example/src/main/java/com/hoangtien2k3/SpringBootDTOValidationExample/model/User.java)
-              * repository
-                * [UserRepository](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/SpringBoot-DTO-Validation-Example/src/main/java/com/hoangtien2k3/SpringBootDTOValidationExample/repository/UserRepository.java)
-              * service
-                * [UserService](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/SpringBoot-DTO-Validation-Example/src/main/java/com/hoangtien2k3/SpringBootDTOValidationExample/service/UserService.java)
-              * [SpringBootDtoValidationExampleApplication](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/SpringBoot-DTO-Validation-Example/src/main/java/com/hoangtien2k3/SpringBootDTOValidationExample/SpringBootDtoValidationExampleApplication.java)
-    * test
-              * [SpringBootDtoValidationExampleApplicationTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/SpringBoot-DTO-Validation-Example/src/test/java/com/hoangtien2k3/SpringBootDTOValidationExample/SpringBootDtoValidationExampleApplicationTests.java)
 
 ## springboot-first-app
     * main
@@ -310,23 +370,6 @@
               * [SpringbootMysqlJpaHibernateRestfullCrudApiApplication](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-mysql-jpa-hibernate-restfull-crud-api/src/main/java/com/springbootlearning/springbootmysqljpahibernaterestfullcrudapi/SpringbootMysqlJpaHibernateRestfullCrudApiApplication.java)
     * test
               * [SpringBootCrudRestApplicationTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-mysql-jpa-hibernate-restfull-crud-api/src/test/java/com/springbootlearning/springbootmysqljpahibernaterestfullcrudapi/SpringBootCrudRestApplicationTests.java)
-
-## springboot-restful-webservices
-    * main
-            * springbootrestfulwebservices
-              * controller
-                * [UserController](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-restful-webservices/src/main/java/com/springbootlearning/springbootrestfulwebservices/controller/UserController.java)
-              * entity
-                * [User](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-restful-webservices/src/main/java/com/springbootlearning/springbootrestfulwebservices/entity/User.java)
-              * repository
-                * [UserRepository](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-restful-webservices/src/main/java/com/springbootlearning/springbootrestfulwebservices/repository/UserRepository.java)
-              * service
-                * impl
-                  * [UserServiceImpl](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-restful-webservices/src/main/java/com/springbootlearning/springbootrestfulwebservices/service/impl/UserServiceImpl.java)
-                * [UserService](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-restful-webservices/src/main/java/com/springbootlearning/springbootrestfulwebservices/service/UserService.java)
-              * [SpringbootRestfulWebservicesApplication](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-restful-webservices/src/main/java/com/springbootlearning/springbootrestfulwebservices/SpringbootRestfulWebservicesApplication.java)
-    * test
-              * [SpringbootRestfulWebservicesApplicationTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-restful-webservices/src/test/java/com/springbootlearning/springbootrestfulwebservices/SpringbootRestfulWebservicesApplicationTests.java)
 
 ## SpringBoot-Scheduling-Tasks-Example
     * main

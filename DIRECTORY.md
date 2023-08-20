@@ -478,3 +478,17 @@
             * [SpringbootValidationApplication](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-validation/src/main/java/com/hoangtien2k3/SpringbootValidationApplication.java)
     * test
             * [SpringbootValidationApplicationTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-validation/src/test/java/com/hoangtien2k3/SpringbootValidationApplicationTests.java)
+
+## Unit-Testing-JPA
+  * spring-boot-jpa-testing
+    * src
+      * main
+        * java
+          * com
+            * hoangtien2k3
+              * [Employee](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Unit-Testing-JPA/spring-boot-jpa-testing/src/main/java/com/hoangtien2k3/Employee.java)
+              * [EmployeeRepositoty](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Unit-Testing-JPA/spring-boot-jpa-testing/src/main/java/com/hoangtien2k3/EmployeeRepositoty.java)
+              * [SpringBootJpaTestingApplication](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Unit-Testing-JPA/spring-boot-jpa-testing/src/main/java/com/hoangtien2k3/SpringBootJpaTestingApplication.java)
+      * test
+              * [EmployeeRepositoryTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Unit-Testing-JPA/spring-boot-jpa-testing/src/test/java/com/hoangtien2k3/EmployeeRepositoryTests.java)
+              * [SpringBootJpaTestingApplicationTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Unit-Testing-JPA/spring-boot-jpa-testing/src/test/java/com/hoangtien2k3/SpringBootJpaTestingApplicationTests.java)

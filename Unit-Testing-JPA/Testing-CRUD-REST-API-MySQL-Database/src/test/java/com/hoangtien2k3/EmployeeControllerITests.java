@@ -25,8 +25,8 @@ import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @AutoConfigureMockMvc
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class EmployeeControllerITests {
 
     @Autowired
@@ -36,9 +36,11 @@ public class EmployeeControllerITests {
     private EmployeeRepository employeeRepository;
 
     @Autowired
+    // dùng thư viện Jackson: thường được sử dụng liên quan đến JSON serialization/deserialization.
+    // ModelMapper : Thường được sử dụng trong các dự án có cấu trúc đối tượng phức tạp và cần ánh xạ giữa các đối tượng theo cách tùy chỉnh.
     private ObjectMapper objectMapper;
 
-    @BeforeEach
+    @BeforeEach // dùng để thiết lập trạng thái ban đầu cho mỗi phương thức kiểm thử
     void setup(){
         employeeRepository.deleteAll();
     }

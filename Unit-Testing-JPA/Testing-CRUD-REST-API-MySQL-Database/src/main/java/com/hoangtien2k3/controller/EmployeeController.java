@@ -1,5 +1,6 @@
 package com.hoangtien2k3.controller;
 
+import com.hoangtien2k3.exception.ResourceNotFoundException;
 import com.hoangtien2k3.model.Employee;
 import com.hoangtien2k3.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,6 +10,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 
 @RestController
@@ -35,10 +37,24 @@ public class EmployeeController {
 
     @GetMapping("{id}")
     public ResponseEntity<Employee> getEmployeeById(@PathVariable(value = "id") long employeeId){
-
+        // cách 1: dùng lambda expression
         return employeeService.getEmployeeById(employeeId)
-                .map(ResponseEntity::ok)    // ResponseEntity.ok().body(employee);
+                .map(employee -> ResponseEntity.ok().body(employee))    // ResponseEntity.ok().body(employee);
                 .orElseGet(() -> ResponseEntity.notFound().build());
+
+       /* // cách 2: dùng method reference
+        return employeeService.getEmployeeById(employeeId)
+                .map(employee -> ResponseEntity.ok().body(employee))
+                .orElseGet(() -> ResponseEntity.notFound().build());*/
+
+
+        /*// cách 3: dùng đối tượng Optional trong Java 8
+        Optional<Employee> employeeOptional = employeeService.getEmployeeById(employeeId);
+        if (employeeOptional.isPresent()) {
+            return ResponseEntity.ok().body(employeeOptional.get());
+        } else {
+            return ResponseEntity.notFound().build();
+        }*/
     }
 
     @PutMapping("{id}")

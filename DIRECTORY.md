@@ -492,3 +492,21 @@
       * test
               * [EmployeeRepositoryTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Unit-Testing-JPA/spring-boot-jpa-testing/src/test/java/com/hoangtien2k3/EmployeeRepositoryTests.java)
               * [SpringBootJpaTestingApplicationTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Unit-Testing-JPA/spring-boot-jpa-testing/src/test/java/com/hoangtien2k3/SpringBootJpaTestingApplicationTests.java)
+  * Testing-CRUD-REST-API-MySQL-Database
+      * main
+              * controller
+                * [EmployeeController](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Unit-Testing-JPA/Testing-CRUD-REST-API-MySQL-Database/src/main/java/com/hoangtien2k3/controller/EmployeeController.java)
+              * exception
+                * [ResourceNotFoundException](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Unit-Testing-JPA/Testing-CRUD-REST-API-MySQL-Database/src/main/java/com/hoangtien2k3/exception/ResourceNotFoundException.java)
+              * model
+                * [Employee](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Unit-Testing-JPA/Testing-CRUD-REST-API-MySQL-Database/src/main/java/com/hoangtien2k3/model/Employee.java)
+              * repository
+                * [EmployeeRepository](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Unit-Testing-JPA/Testing-CRUD-REST-API-MySQL-Database/src/main/java/com/hoangtien2k3/repository/EmployeeRepository.java)
+              * service
+                * [EmployeeService](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Unit-Testing-JPA/Testing-CRUD-REST-API-MySQL-Database/src/main/java/com/hoangtien2k3/service/EmployeeService.java)
+                * impl
+                  * [EmployeeServiceImpl](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Unit-Testing-JPA/Testing-CRUD-REST-API-MySQL-Database/src/main/java/com/hoangtien2k3/service/impl/EmployeeServiceImpl.java)
+              * [TestingCrudRestApiMySqlDatabaseApplication](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Unit-Testing-JPA/Testing-CRUD-REST-API-MySQL-Database/src/main/java/com/hoangtien2k3/TestingCrudRestApiMySqlDatabaseApplication.java)
+      * test
+              * [EmployeeControllerITests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Unit-Testing-JPA/Testing-CRUD-REST-API-MySQL-Database/src/test/java/com/hoangtien2k3/EmployeeControllerITests.java)
+              * [TestingCrudRestApiMySqlDatabaseApplicationTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Unit-Testing-JPA/Testing-CRUD-REST-API-MySQL-Database/src/test/java/com/hoangtien2k3/TestingCrudRestApiMySqlDatabaseApplicationTests.java)

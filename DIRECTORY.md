@@ -225,9 +225,23 @@
     * test
               * [SpringBoot2JpaCrudExampleApplicationTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/spring-boot2-jpa-crud-example/src/test/java/com/springbootlearning/springboot2jpacrudexample/SpringBoot2JpaCrudExampleApplicationTests.java)
 
-## SpringBoot-CRUD-Example-with-H2-Database
+## Spring-Data-JPA-Tutorial-Getting-Started
     * main
           * hoangtien2k3
+            * controller
+              * [ProductController](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Spring-Data-JPA-Tutorial-Getting-Started/src/main/java/com/hoangtien2k3/controller/ProductController.java)
+            * model
+              * [Product](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Spring-Data-JPA-Tutorial-Getting-Started/src/main/java/com/hoangtien2k3/model/Product.java)
+            * repository
+              * [ProductRepository](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Spring-Data-JPA-Tutorial-Getting-Started/src/main/java/com/hoangtien2k3/repository/ProductRepository.java)
+            * service
+              * [ProductService](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Spring-Data-JPA-Tutorial-Getting-Started/src/main/java/com/hoangtien2k3/service/ProductService.java)
+            * [SpringDataJpaTutorialGettingStartedApplication](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Spring-Data-JPA-Tutorial-Getting-Started/src/main/java/com/hoangtien2k3/SpringDataJpaTutorialGettingStartedApplication.java)
+    * test
+            * [SpringDataJpaTutorialGettingStartedApplicationTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Spring-Data-JPA-Tutorial-Getting-Started/src/test/java/com/hoangtien2k3/SpringDataJpaTutorialGettingStartedApplicationTests.java)
+
+## SpringBoot-CRUD-Example-with-H2-Database
+    * main
             * controller
               * [ProductController](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/SpringBoot-CRUD-Example-with-H2-Database/src/main/java/com/hoangtien2k3/controller/ProductController.java)
             * exception

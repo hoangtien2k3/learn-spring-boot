@@ -1,5 +1,30 @@
 
-## Unit Testing in Spring Boot Java
+## JUnit and Mockito
+
+### JUnit:
+- JUnit là một framework kiểm thử phổ biến trong Java, được sử dụng để viết và chạy các kiểm thử đơn vị và kiểm thử tích hợp.
+- Để sử dụng JUnit trong Spring Boot, bạn cần thêm thư viện JUnit vào file cấu hình của dự án (pom.xml nếu sử dụng Maven hoặc build.gradle nếu sử dụng Gradle).
+- dụng các annotation như `@Test`, `@BeforeEach`, `@AfterEach`, `@BeforeAll`, và `@AfterAll` để viết các phương thức kiểm thử và thiết lập môi trường.
+
+
+Xác định phương thức kiểm thử
+- `@Test`, `@BeforeEach`, `@AfterEach`, `@BeforeAll`, và `@AfterAll`
+
+Tạo môi trường kiểm thử:
+- `@BeforeEach`, `@BeforeAll`
+
+Xác minh kết quả:
+- `assertEquals`, `assertTrue`, `assertFalse`
+
+Xử lý ngoại lệ:
+- `@Test` kết hợp với `expected`
+- `assertThrows`
+
+
+### Mockito:
+- Mockito là một thư viện mô phỏng (mocking) trong kiểm thử Java, được sử dụng để tạo ra các đối tượng giả lập (mock objects) để kiểm thử các tương tác giữa các thành phần.
+- Spring Boot, Mockito thường được sử dụng để mô phỏng các phụ thuộc của các thành phần kiểm thử.
+- 
 
 
 [@ObjectMapper]()
@@ -59,4 +84,25 @@ public class LibraryTest {
 }
 ```
 
+
+## @AutoConfigureMockMvc
+-  Khi bạn áp dụng annotation này trên một lớp kiểm thử (test class), Spring Boot sẽ cấu hình môi trường để tạo ra một bean MockMvc. Đây là một cách để bạn "giả lập" việc gửi các HTTP requests đến các endpoint trong ứng dụng của bạn mà không cần thực sự khởi động ứng dụng. 
+-  MockMvc cho phép bạn thực hiện kiểm tra về việc xử lý `HTTP requests`, kiểm tra các response, và kiểm tra các giá trị được trả về từ controller mà không cần tạo ra một máy chủ thực sự.
+
+```java
+@SpringBootTest
+@AutoConfigureMockMvc
+public class MyControllerTest {
+    
+    @Autowired
+    private MockMvc mockMvc;
+    
+    @Test
+    public void testGetEndpoint() throws Exception {
+        mockMvc.perform(get("/api/some-endpoint"))
+               .andExpect(status().isOk())
+               .andExpect(content().string("Expected response content"));
+    }
+}
+```
 

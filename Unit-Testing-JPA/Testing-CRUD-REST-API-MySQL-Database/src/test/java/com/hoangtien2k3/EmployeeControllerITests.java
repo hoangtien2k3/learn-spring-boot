@@ -30,17 +30,19 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 public class EmployeeControllerITests {
 
     @Autowired
-    private MockMvc mockMvc;
+    private MockMvc mockMvc;    // dùng để giải lập việc gửi HTTP request
 
     @Autowired
-    private EmployeeRepository employeeRepository;
+    private EmployeeRepository employeeRepository; // tương tác với cơ sở dữ liệu
 
     @Autowired
     // dùng thư viện Jackson: thường được sử dụng liên quan đến JSON serialization/deserialization.
     // ModelMapper : Thường được sử dụng trong các dự án có cấu trúc đối tượng phức tạp và cần ánh xạ giữa các đối tượng theo cách tùy chỉnh.
-    private ObjectMapper objectMapper;
+    private ObjectMapper objectMapper;  // map giữa 2 object với nhau (hoặc cũng có thể dùng ModelMapper)
 
-    @BeforeEach // dùng để thiết lập trạng thái ban đầu cho mỗi phương thức kiểm thử
+    @BeforeEach // trạng thái ban đầu cho mỗi phương thức kiểm thử
+    // dùng để thiết lập trạng thái ban đầu cho mỗi phương thức kiểm thử: @Test
+    // dùng thư viện maven: JUnit
     void setup(){
         employeeRepository.deleteAll();
     }
@@ -49,10 +51,11 @@ public class EmployeeControllerITests {
     public void givenEmployeeObject_whenCreateEmployee_thenReturnSavedEmployee() throws Exception{
 
         // given - precondition or setup
+        // dùng @Builder để tạo đối tương một cách dẽ dàng
         Employee employee = Employee.builder()
-                .firstName("Ramesh")
-                .lastName("Fadatare")
-                .email("ramesh@gmail.com")
+                .firstName("hoangtien2k3")
+                .lastName("qx1")
+                .email("hoangtien2k3qx1@gmail.com")
                 .build();
 
         // when - action or behaviour that we are going test
@@ -63,13 +66,9 @@ public class EmployeeControllerITests {
         // then - verify the result or output using assert statements
         response.andDo(print()).
                 andExpect(status().isCreated())
-                .andExpect(jsonPath("$.firstName",
-                        is(employee.getFirstName())))
-                .andExpect(jsonPath("$.lastName",
-                        is(employee.getLastName())))
-                .andExpect(jsonPath("$.email",
-                        is(employee.getEmail())));
-
+                .andExpect(jsonPath("$.firstName", is(employee.getFirstName())))
+                .andExpect(jsonPath("$.lastName", is(employee.getLastName())))
+                .andExpect(jsonPath("$.email", is(employee.getEmail())));
     }
 
     // JUnit test for Get All employees REST API
@@ -77,17 +76,25 @@ public class EmployeeControllerITests {
     public void givenListOfEmployees_whenGetAllEmployees_thenReturnEmployeesList() throws Exception{
         // given - precondition or setup
         List<Employee> listOfEmployees = new ArrayList<>();
-        listOfEmployees.add(Employee.builder().firstName("Ramesh").lastName("Fadatare").email("ramesh@gmail.com").build());
-        listOfEmployees.add(Employee.builder().firstName("Tony").lastName("Stark").email("tony@gmail.com").build());
+        listOfEmployees.add(Employee.builder()
+                .firstName("hoangtien2k3")
+                .lastName("qx1")
+                .email("hoangtien2k3qx1@gmail.com")
+                .build());
+        listOfEmployees.add(Employee.builder()
+                .firstName("Tony")
+                .lastName("Stark")
+                .email("tony@gmail.com")
+                .build());
         employeeRepository.saveAll(listOfEmployees);
+
         // when -  action or the behaviour that we are going test
         ResultActions response = mockMvc.perform(get("/api/employees"));
 
         // then - verify the output
         response.andExpect(status().isOk())
                 .andDo(print())
-                .andExpect(jsonPath("$.size()",
-                        is(listOfEmployees.size())));
+                .andExpect(jsonPath("$.size()", is(listOfEmployees.size())));
 
     }
 
@@ -96,10 +103,10 @@ public class EmployeeControllerITests {
     @Test
     public void givenEmployeeId_whenGetEmployeeById_thenReturnEmployeeObject() throws Exception{
         // given - precondition or setup
-        Employee employee = Employee.builder()
-                .firstName("Ramesh")
-                .lastName("Fadatare")
-                .email("ramesh@gmail.com")
+        Employee employee = Employee.builder() // @Builder activity
+                .firstName("hoangtien2k3")
+                .lastName("qx1")
+                .email("hoangtien2k3qx1@gmail.com")
                 .build();
         employeeRepository.save(employee);
 
@@ -122,9 +129,9 @@ public class EmployeeControllerITests {
         // given - precondition or setup
         long employeeId = 1L;
         Employee employee = Employee.builder()
-                .firstName("Ramesh")
-                .lastName("Fadatare")
-                .email("ramesh@gmail.com")
+                .firstName("hoangtien2k3")
+                .lastName("qx1")
+                .email("hoangtien2k3qx1@gmail.com")
                 .build();
         employeeRepository.save(employee);
 
@@ -142,9 +149,9 @@ public class EmployeeControllerITests {
     public void givenUpdatedEmployee_whenUpdateEmployee_thenReturnUpdateEmployeeObject() throws Exception{
         // given - precondition or setup
         Employee savedEmployee = Employee.builder()
-                .firstName("Ramesh")
-                .lastName("Fadatare")
-                .email("ramesh@gmail.com")
+                .firstName("hoangtien2k3")
+                .lastName("qx1")
+                .email("hoangtien2k3qx1@gmail.com")
                 .build();
         employeeRepository.save(savedEmployee);
 
@@ -176,9 +183,9 @@ public class EmployeeControllerITests {
 
         // using 'assertj-core' create entity faster than
         Employee savedEmployee = Employee.builder()
-                .firstName("Ramesh")
-                .lastName("Fadatare")
-                .email("ramesh@gmail.com")
+                .firstName("hoangtien2k3")
+                .lastName("qx1")
+                .email("hoangtien2k3qx1@gmail.com")
                 .build();
         employeeRepository.save(savedEmployee);
 
@@ -203,9 +210,9 @@ public class EmployeeControllerITests {
     public void givenEmployeeId_whenDeleteEmployee_thenReturn200() throws Exception{
         // given - precondition or setup
         Employee savedEmployee = Employee.builder()
-                .firstName("Ramesh")
-                .lastName("Fadatare")
-                .email("ramesh@gmail.com")
+                .firstName("hoangtien2k3")
+                .lastName("qx1")
+                .email("hoangtien2k3qx1@gmail.com")
                 .build();
 
         employeeRepository.save(savedEmployee);

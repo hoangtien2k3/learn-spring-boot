@@ -219,3 +219,24 @@
 - [Free Spring Boot Microservices Open Source Projects | GitHub | Download]()
 - [Free Spring Boot Angular Open Source Projects | GitHub]()
 
+
+
+# NỘI DUNG CẦN NHỚ (NOTE)
+
+## Logging in Spring Boot
+- Mức độ log: ERROR, WARN, INFO, DEBUG và TRACE.
+- Các cấu hình mặc định được cung cấp để hỗ trợ cho Java Util Logging, Log4J2, SLF4J và Logback.
+
+|Mức độ|	Màu|	Nội dung|
+|------|------|----------|
+|FATAL|	Đỏ	|Chỉ định các sự kiện lỗi rất nghiêm trọng có thể khiến ứng dụng bị hủy bỏ hoặc dừng lại.|
+|ERROR|	Đỏ	|Chỉ định các sự kiện lỗi có thể xảy ra mà vẫn cho phép ứng dụng tiếp tục chạy.|
+|WARN|	Vàng	|Chỉ định các tình hướng có thể gây hại cho ứng dụng đang chạy.|
+|INFO|	Xanh	|Chỉ định các thông báo cung cấp thông tin làm nổi bật tiến trình của ứng dụng ở cấp độ chi tiết.|
+|DEBUG|	Xanh	|Chỉ định các sự kiện thông tin chi tiết hữu ích để gỡ lỗi ứng dụng.|
+|TRACE|	Xanh	|Chỉ định các sự kiện thông tin chi tiết hơn cấp độ DEBUG.|
+
+
+
+
+

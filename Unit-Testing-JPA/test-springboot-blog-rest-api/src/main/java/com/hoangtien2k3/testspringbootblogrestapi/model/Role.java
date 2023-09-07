@@ -1,9 +1,11 @@
 package com.hoangtien2k3.testspringbootblogrestapi.model;
 
 import jakarta.persistence.*;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 
+@Builder
 @Setter
 @Getter
 @Entity

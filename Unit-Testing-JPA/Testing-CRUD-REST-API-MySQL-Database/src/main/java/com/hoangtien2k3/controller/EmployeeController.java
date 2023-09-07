@@ -36,17 +36,16 @@ public class EmployeeController {
     }
 
     @GetMapping("{id}")
-    public ResponseEntity<Employee> getEmployeeById(@PathVariable(value = "id") long employeeId){
+    public ResponseEntity<Employee> getEmployeeById(@PathVariable(value = "id") long employeeId) {
         // cách 1: dùng lambda expression
         return employeeService.getEmployeeById(employeeId)
                 .map(employee -> ResponseEntity.ok().body(employee))    // ResponseEntity.ok().body(employee);
                 .orElseGet(() -> ResponseEntity.notFound().build());
 
-       /* // cách 2: dùng method reference
+        /* // cách 2: dùng method reference
         return employeeService.getEmployeeById(employeeId)
                 .map(employee -> ResponseEntity.ok().body(employee))
                 .orElseGet(() -> ResponseEntity.notFound().build());*/
-
 
         /*// cách 3: dùng đối tượng Optional trong Java 8
         Optional<Employee> employeeOptional = employeeService.getEmployeeById(employeeId);

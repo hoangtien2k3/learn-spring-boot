@@ -236,6 +236,7 @@
 |DEBUG|	Xanh	|Chỉ định các sự kiện thông tin chi tiết hữu ích để gỡ lỗi ứng dụng.|
 |TRACE|	Xanh	|Chỉ định các sự kiện thông tin chi tiết hơn cấp độ DEBUG.|
 
+![image](https://github.com/hoangtien2k3qx1/learn-spring-boot/assets/122768076/63bbfa21-b5d0-4fb8-b172-679d327cc0e6)
 
 
 

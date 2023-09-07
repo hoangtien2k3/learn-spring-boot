@@ -172,43 +172,8 @@
     * test
               * [PatchMappingSpringBootAnotationApplicationTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/PatchMapping-SpringBoot-Anotation/src/test/java/com/hoangtien2k3/PatchMappingSpringBootAnotation/PatchMappingSpringBootAnotationApplicationTests.java)
 
-## Securing-Spring-Boot-REST-APIs-Using-Spring-Security
-  * SpringBoot-Spring-Security-JWT-MySQL-Database-Tutorial
-    * src
-      * main
-        * java
-          * com
-            * hoangtien2k3
-              * configuration
-                * [SpringSecurityConfig](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Securing-Spring-Boot-REST-APIs-Using-Spring-Security/SpringBoot-Spring-Security-JWT-MySQL-Database-Tutorial/src/main/java/com/hoangtien2k3/configuration/SpringSecurityConfig.java)
-              * controller
-                * [AuthController](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Securing-Spring-Boot-REST-APIs-Using-Spring-Security/SpringBoot-Spring-Security-JWT-MySQL-Database-Tutorial/src/main/java/com/hoangtien2k3/controller/AuthController.java)
-              * dto
-                * [LoginDto](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Securing-Spring-Boot-REST-APIs-Using-Spring-Security/SpringBoot-Spring-Security-JWT-MySQL-Database-Tutorial/src/main/java/com/hoangtien2k3/dto/LoginDto.java)
-              * model
-                * [Role](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Securing-Spring-Boot-REST-APIs-Using-Spring-Security/SpringBoot-Spring-Security-JWT-MySQL-Database-Tutorial/src/main/java/com/hoangtien2k3/model/Role.java)
-                * [User](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Securing-Spring-Boot-REST-APIs-Using-Spring-Security/SpringBoot-Spring-Security-JWT-MySQL-Database-Tutorial/src/main/java/com/hoangtien2k3/model/User.java)
-              * repository
-                * [RoleRepository](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Securing-Spring-Boot-REST-APIs-Using-Spring-Security/SpringBoot-Spring-Security-JWT-MySQL-Database-Tutorial/src/main/java/com/hoangtien2k3/repository/RoleRepository.java)
-                * [UserRepository](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Securing-Spring-Boot-REST-APIs-Using-Spring-Security/SpringBoot-Spring-Security-JWT-MySQL-Database-Tutorial/src/main/java/com/hoangtien2k3/repository/UserRepository.java)
-              * security
-                * [JwtAuthenticationEntryPoint](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Securing-Spring-Boot-REST-APIs-Using-Spring-Security/SpringBoot-Spring-Security-JWT-MySQL-Database-Tutorial/src/main/java/com/hoangtien2k3/security/JwtAuthenticationEntryPoint.java)
-                * [JwtAuthenticationFilter](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Securing-Spring-Boot-REST-APIs-Using-Spring-Security/SpringBoot-Spring-Security-JWT-MySQL-Database-Tutorial/src/main/java/com/hoangtien2k3/security/JwtAuthenticationFilter.java)
-                * [JwtTokenProvider](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Securing-Spring-Boot-REST-APIs-Using-Spring-Security/SpringBoot-Spring-Security-JWT-MySQL-Database-Tutorial/src/main/java/com/hoangtien2k3/security/JwtTokenProvider.java)
-              * service
-                * [AuthService](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Securing-Spring-Boot-REST-APIs-Using-Spring-Security/SpringBoot-Spring-Security-JWT-MySQL-Database-Tutorial/src/main/java/com/hoangtien2k3/service/AuthService.java)
-                * [CustomUserDetailsService](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Securing-Spring-Boot-REST-APIs-Using-Spring-Security/SpringBoot-Spring-Security-JWT-MySQL-Database-Tutorial/src/main/java/com/hoangtien2k3/service/CustomUserDetailsService.java)
-                * impl
-                  * [AuthServiceImpl](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Securing-Spring-Boot-REST-APIs-Using-Spring-Security/SpringBoot-Spring-Security-JWT-MySQL-Database-Tutorial/src/main/java/com/hoangtien2k3/service/impl/AuthServiceImpl.java)
-              * [SpringBootSpringSecurityJwtMySqlDatabaseTutorialApplication](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Securing-Spring-Boot-REST-APIs-Using-Spring-Security/SpringBoot-Spring-Security-JWT-MySQL-Database-Tutorial/src/main/java/com/hoangtien2k3/SpringBootSpringSecurityJwtMySqlDatabaseTutorialApplication.java)
-      * test
-              * [SpringBootSpringSecurityJwtMySqlDatabaseTutorialApplicationTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Securing-Spring-Boot-REST-APIs-Using-Spring-Security/SpringBoot-Spring-Security-JWT-MySQL-Database-Tutorial/src/test/java/com/hoangtien2k3/SpringBootSpringSecurityJwtMySqlDatabaseTutorialApplicationTests.java)
-
 ## spring-boot2-jpa-crud-example
-  * src
     * main
-      * java
-        * com
           * springbootlearning
             * springboot2jpacrudexample
               * controller
@@ -378,16 +343,9 @@
     * test
               * [SpringBootCrudRestApplicationTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-mysql-jpa-hibernate-restfull-crud-api/src/test/java/com/springbootlearning/springbootmysqljpahibernaterestfullcrudapi/SpringBootCrudRestApplicationTests.java)
 
-## SpringBoot-Scheduling-Tasks-Example
-    * main
-          * hoangtien2k3
-            * [ScheduledTasks](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/SpringBoot-Scheduling-Tasks-Example/src/main/java/com/hoangtien2k3/ScheduledTasks.java)
-            * [SpringBootSchedulingTasksExampleApplication](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/SpringBoot-Scheduling-Tasks-Example/src/main/java/com/hoangtien2k3/SpringBootSchedulingTasksExampleApplication.java)
-    * test
-            * [SpringBootSchedulingTasksExampleApplicationTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/SpringBoot-Scheduling-Tasks-Example/src/test/java/com/hoangtien2k3/SpringBootSchedulingTasksExampleApplicationTests.java)
-
 ## springboot-Search-REST-API-Jpa-Mysql
     * main
+          * hoangtien2k3
             * springbootSearchRESTAPIJpaMysql
               * controller
                 * [ProductController](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-Search-REST-API-Jpa-Mysql/src/main/java/com/hoangtien2k3/springbootSearchRESTAPIJpaMysql/controller/ProductController.java)
@@ -404,7 +362,20 @@
               * [SpringbootSearchRestApiJpaMysqlApplicationTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-Search-REST-API-Jpa-Mysql/src/test/java/com/hoangtien2k3/springbootSearchRESTAPIJpaMysql/SpringbootSearchRestApiJpaMysqlApplicationTests.java)
 
 ## springboot-search-rest-api
+  * SpringBoot-Scheduling-Tasks-Example
+    * src
+      * main
+        * java
+          * com
+            * hoangtien2k3
+              * [ScheduledTasks](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-search-rest-api/SpringBoot-Scheduling-Tasks-Example/src/main/java/com/hoangtien2k3/ScheduledTasks.java)
+              * [SpringBootSchedulingTasksExampleApplication](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-search-rest-api/SpringBoot-Scheduling-Tasks-Example/src/main/java/com/hoangtien2k3/SpringBootSchedulingTasksExampleApplication.java)
+      * test
+              * [SpringBootSchedulingTasksExampleApplicationTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-search-rest-api/SpringBoot-Scheduling-Tasks-Example/src/test/java/com/hoangtien2k3/SpringBootSchedulingTasksExampleApplicationTests.java)
+  * src
     * main
+      * java
+        * com
           * hoantien2k3
             * springbootsearchrestapi
               * controller
@@ -492,6 +463,27 @@
       * test
               * [EmployeeRepositoryTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Unit-Testing-JPA/spring-boot-jpa-testing/src/test/java/com/hoangtien2k3/EmployeeRepositoryTests.java)
               * [SpringBootJpaTestingApplicationTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Unit-Testing-JPA/spring-boot-jpa-testing/src/test/java/com/hoangtien2k3/SpringBootJpaTestingApplicationTests.java)
+  * test-springboot-blog-rest-api
+      * main
+              * testspringbootblogrestapi
+                * config
+                  * [SecurityConfig](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Unit-Testing-JPA/test-springboot-blog-rest-api/src/main/java/com/hoangtien2k3/testspringbootblogrestapi/config/SecurityConfig.java)
+                * controller
+                  * [AuthController](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Unit-Testing-JPA/test-springboot-blog-rest-api/src/main/java/com/hoangtien2k3/testspringbootblogrestapi/controller/AuthController.java)
+                * dto
+                  * [LoginDto](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Unit-Testing-JPA/test-springboot-blog-rest-api/src/main/java/com/hoangtien2k3/testspringbootblogrestapi/dto/LoginDto.java)
+                  * [SignUpDto](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Unit-Testing-JPA/test-springboot-blog-rest-api/src/main/java/com/hoangtien2k3/testspringbootblogrestapi/dto/SignUpDto.java)
+                * model
+                  * [Role](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Unit-Testing-JPA/test-springboot-blog-rest-api/src/main/java/com/hoangtien2k3/testspringbootblogrestapi/model/Role.java)
+                  * [User](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Unit-Testing-JPA/test-springboot-blog-rest-api/src/main/java/com/hoangtien2k3/testspringbootblogrestapi/model/User.java)
+                * repository
+                  * [RoleRepository](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Unit-Testing-JPA/test-springboot-blog-rest-api/src/main/java/com/hoangtien2k3/testspringbootblogrestapi/repository/RoleRepository.java)
+                  * [UserRepository](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Unit-Testing-JPA/test-springboot-blog-rest-api/src/main/java/com/hoangtien2k3/testspringbootblogrestapi/repository/UserRepository.java)
+                * service
+                  * [CustomUserDetailsService](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Unit-Testing-JPA/test-springboot-blog-rest-api/src/main/java/com/hoangtien2k3/testspringbootblogrestapi/service/CustomUserDetailsService.java)
+                * [TestSpringbootBlogRestApiApplication](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Unit-Testing-JPA/test-springboot-blog-rest-api/src/main/java/com/hoangtien2k3/testspringbootblogrestapi/TestSpringbootBlogRestApiApplication.java)
+      * test
+                * [TestSpringbootBlogRestApiApplicationTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Unit-Testing-JPA/test-springboot-blog-rest-api/src/test/java/com/hoangtien2k3/testspringbootblogrestapi/TestSpringbootBlogRestApiApplicationTests.java)
   * Testing-CRUD-REST-API-MySQL-Database
       * main
               * controller
@@ -508,5 +500,6 @@
                   * [EmployeeServiceImpl](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Unit-Testing-JPA/Testing-CRUD-REST-API-MySQL-Database/src/main/java/com/hoangtien2k3/service/impl/EmployeeServiceImpl.java)
               * [TestingCrudRestApiMySqlDatabaseApplication](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Unit-Testing-JPA/Testing-CRUD-REST-API-MySQL-Database/src/main/java/com/hoangtien2k3/TestingCrudRestApiMySqlDatabaseApplication.java)
       * test
-              * [EmployeeControllerITests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Unit-Testing-JPA/Testing-CRUD-REST-API-MySQL-Database/src/test/java/com/hoangtien2k3/EmployeeControllerITests.java)
+              * [Employee Test Controller](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Unit-Testing-JPA/Testing-CRUD-REST-API-MySQL-Database/src/test/java/com/hoangtien2k3/Employee_Test_Controller.java)
+              * [EmployeeControllerTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Unit-Testing-JPA/Testing-CRUD-REST-API-MySQL-Database/src/test/java/com/hoangtien2k3/EmployeeControllerTests.java)
               * [TestingCrudRestApiMySqlDatabaseApplicationTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Unit-Testing-JPA/Testing-CRUD-REST-API-MySQL-Database/src/test/java/com/hoangtien2k3/TestingCrudRestApiMySqlDatabaseApplicationTests.java)

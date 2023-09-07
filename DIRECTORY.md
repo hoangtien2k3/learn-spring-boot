@@ -450,13 +450,29 @@
     * test
             * [SpringbootValidationApplicationTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/springboot-validation/src/test/java/com/hoangtien2k3/SpringbootValidationApplicationTests.java)
 
-## Unit-Testing-JPA
-  * spring-boot-jpa-testing
+## swagger
+  * Memo-Swagger
     * src
       * main
         * java
           * com
             * hoangtien2k3
+              * MemoSwagger
+                * [MemoSwaggerApplication](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/swagger/Memo-Swagger/src/main/java/com/hoangtien2k3/MemoSwagger/MemoSwaggerApplication.java)
+                * [SwaggerConfig](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/swagger/Memo-Swagger/src/main/java/com/hoangtien2k3/MemoSwagger/SwaggerConfig.java)
+      * test
+                * [MemoSwaggerApplicationTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/swagger/Memo-Swagger/src/test/java/com/hoangtien2k3/MemoSwagger/MemoSwaggerApplicationTests.java)
+  * Spring-Boot-REST-API-Documentation-With-Swagger
+      * main
+              * [Application](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/swagger/Spring-Boot-REST-API-Documentation-With-Swagger/src/main/java/com/hoangtien2k3/Application.java)
+              * config
+                * [SwaggerConfig](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/swagger/Spring-Boot-REST-API-Documentation-With-Swagger/src/main/java/com/hoangtien2k3/config/SwaggerConfig.java)
+      * test
+              * [ApplicationTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/swagger/Spring-Boot-REST-API-Documentation-With-Swagger/src/test/java/com/hoangtien2k3/ApplicationTests.java)
+
+## Unit-Testing-JPA
+  * spring-boot-jpa-testing
+      * main
               * [Employee](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Unit-Testing-JPA/spring-boot-jpa-testing/src/main/java/com/hoangtien2k3/Employee.java)
               * [EmployeeRepositoty](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Unit-Testing-JPA/spring-boot-jpa-testing/src/main/java/com/hoangtien2k3/EmployeeRepositoty.java)
               * [SpringBootJpaTestingApplication](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Unit-Testing-JPA/spring-boot-jpa-testing/src/main/java/com/hoangtien2k3/SpringBootJpaTestingApplication.java)

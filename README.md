@@ -243,6 +243,6 @@
 - `@SqlResultSetMappings`: được sử dụng để định nghĩa các kết quả của câu truy vấn SQL dưới dạng tập hợp các `@SqlResultSetMapping` annotation.
 được sử dụng để ánh xạ các cột quan hệ dữ liệu của câu truy vấn SQL thành đối tượng Java. Bằng cách chỉ định tên của `@SqlResultSetMapping` annotation, bạn có thể lựa chọn các cột từ kết quả truy vấn và ánh xạ chúng vào các thuộc tính của đối tượng Java.
 
-
+- `@NamedNativeQuery` là một annotation được sử dụng trong JPA (Java Persistence API) để định nghĩa một truy vấn SQL nguyên thủy (native query).
 
 

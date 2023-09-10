@@ -245,4 +245,13 @@
 
 - `@NamedNativeQuery` là một annotation được sử dụng trong JPA (Java Persistence API) để định nghĩa một truy vấn SQL nguyên thủy (native query).
 
+- `@Transactional`: Annotation `@Transactional` được đặt trước một phương thức hoặc một lớp và chỉ định rằng phương thức hoặc tất cả các phương thức trong lớp được gọi trong một giao dịch (transaction).
+Giao dịch dùng để đảm bảo tính nhất quán của dữ liệu và bảo đảm rằng các thay đổi được thực hiện thành công hoặc rollback nếu có lỗi xảy ra.
+Annotation này giúp giảm thiểu việc viết mã để quản lý giao dịch thủ công và đảm bảo rằng các thay đổi dữ liệu được xử lý một cách an toàn và nhất quán.
 
+- `@Modifying`: Annotation `@Modifying` được sử dụng để chỉ định rằng phương thức đang thực hiện một hành động sửa đổi dữ liệu trong cơ sở dữ liệu, không phải là một truy vấn truy xuất dữ liệu.
+Annotation này cần được sử dụng kèm với annotation `@Transactional`.
+
+- `@Query`: Annotation `@Query` được sử dụng để định nghĩa truy vấn SQL hoặc JPQL (Java Persistence Query Language) mà phương thức sẽ thực hiện.
+Với `nativeQuery = true`, câu lệnh truy vấn được sử dụng là một câu lệnh SQL gốc (Native SQL) thay vì truy vấn JPQL.
+Các tham số của truy vấn được chỉ định bằng cách sử dụng các tham số có tên (?1, ?2, ...) và các tham số này sẽ được truyền vào từ các tham số của phương thức.

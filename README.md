@@ -239,5 +239,10 @@
 ![image](https://github.com/hoangtien2k3qx1/learn-spring-boot/assets/122768076/63bbfa21-b5d0-4fb8-b172-679d327cc0e6)
 
 
+## Anotation Cần Note:
+- `@SqlResultSetMappings`: được sử dụng để định nghĩa các kết quả của câu truy vấn SQL dưới dạng tập hợp các `@SqlResultSetMapping` annotation.
+được sử dụng để ánh xạ các cột quan hệ dữ liệu của câu truy vấn SQL thành đối tượng Java. Bằng cách chỉ định tên của `@SqlResultSetMapping` annotation, bạn có thể lựa chọn các cột từ kết quả truy vấn và ánh xạ chúng vào các thuộc tính của đối tượng Java.
+
+
 
 

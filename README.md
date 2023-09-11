@@ -255,3 +255,26 @@ Annotation này cần được sử dụng kèm với annotation `@Transactional
 - `@Query`: Annotation `@Query` được sử dụng để định nghĩa truy vấn SQL hoặc JPQL (Java Persistence Query Language) mà phương thức sẽ thực hiện.
 Với `nativeQuery = true`, câu lệnh truy vấn được sử dụng là một câu lệnh SQL gốc (Native SQL) thay vì truy vấn JPQL.
 Các tham số của truy vấn được chỉ định bằng cách sử dụng các tham số có tên (?1, ?2, ...) và các tham số này sẽ được truyền vào từ các tham số của phương thức.
+
+
+### Tổng quan Swagger: Để sử dụng cơ bản thì Swagger cung cấp một số các Annotations hữu ích sau:
+
+SYNTAX	DESCRIPTION
+
+|SYNTAX|DESCRIPTION|
+|------|-----------|
+|@Api | Đánh dấu 1 class là nơi chứa các API|
+|@ApiModel|Đánh dấu 1 class là Swagger Model|
+|@ApiModelProperty|Bổ sung các thông tin cho|
+|@ApiOperation|Mô tả cho một API và response của nó|
+|@ApiParam|Mô tả các parameter|
+|@ApiResponse|Mô tả status code của response|
+|@ApiResponses|Mô tả danh sách các status code của response|
+
+
+
+
+
+
+
+

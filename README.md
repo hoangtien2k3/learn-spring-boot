@@ -296,7 +296,8 @@ SYNTAX	DESCRIPTION
 @GeneratedValue(strategy = GenerationType.TABLE, generator = "your_table_generator_name")
 ```
 
+## Serializable and De-Serializable
 
-
+![image](https://github.com/hoangtien2k3qx1/learn-spring-boot/assets/122768076/065bdd1d-1800-4e6a-a8b7-8794fe556939)
 
 

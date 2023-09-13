@@ -191,12 +191,23 @@
               * [SpringBoot2JpaCrudExampleApplicationTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/spring-boot2-jpa-crud-example/src/test/java/com/springbootlearning/springboot2jpacrudexample/SpringBoot2JpaCrudExampleApplicationTests.java)
 
 ## Spring-Data-JPA-Hibernate
-  * One-To-Many-Unidirectional
+  * One-To-Many-Bidirectional
     * src
       * main
         * java
           * com
             * hoangtien2k3
+              * OneToManyBidirectional
+                * entity
+                  * [Order](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Spring-Data-JPA-Hibernate/One-To-Many-Bidirectional/src/main/java/com/hoangtien2k3/OneToManyBidirectional/entity/Order.java)
+                  * [OrderItem](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Spring-Data-JPA-Hibernate/One-To-Many-Bidirectional/src/main/java/com/hoangtien2k3/OneToManyBidirectional/entity/OrderItem.java)
+                * [OneToManyBidirectionalApplication](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Spring-Data-JPA-Hibernate/One-To-Many-Bidirectional/src/main/java/com/hoangtien2k3/OneToManyBidirectional/OneToManyBidirectionalApplication.java)
+                * repository
+                  * [OrderRepository](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Spring-Data-JPA-Hibernate/One-To-Many-Bidirectional/src/main/java/com/hoangtien2k3/OneToManyBidirectional/repository/OrderRepository.java)
+      * test
+                * [OneToManyBidirectionalApplicationTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Spring-Data-JPA-Hibernate/One-To-Many-Bidirectional/src/test/java/com/hoangtien2k3/OneToManyBidirectional/OneToManyBidirectionalApplicationTests.java)
+  * One-To-Many-Unidirectional
+      * main
               * OneToManyUnidirectional
                 * entiry
                   * [Order](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Spring-Data-JPA-Hibernate/One-To-Many-Unidirectional/src/main/java/com/hoangtien2k3/OneToManyUnidirectional/entiry/Order.java)

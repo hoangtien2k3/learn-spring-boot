@@ -272,7 +272,27 @@ SYNTAX	DESCRIPTION
 |@ApiResponses|Mô tả danh sách các status code của response|
 
 
+## GeneratedValue: và Trường sinh này áp dụng cho các trường kiểu số nguyên `(integer)` hoặc số dấu thập phân `(decimal)`
 
+- `GenerationType.AUTO`: là một kiểu sinh giá trị tự động. hệ thống sẽ cố gắng tự động xác định cách sinh giá trị tốt nhất dựa trên cơ sở dữ liệu bạn đang sử dụng.
+```java
+@GeneratedValue(strategy = GenerationType.AUTO)
+```
+
+- `GenerationType.IDENTITY`: Được sử dụng với các cơ sở dữ liệu hỗ trợ tự động tăng (auto-increment) như MySQL hoặc PostgreSQL. Khi bạn chọn kiểu này, cơ sở dữ liệu sẽ tự động tăng giá trị của trường này khi một bản ghi mới được thêm vào cơ sở dữ liệu.
+```java
+@GeneratedValue(strategy = GenerationType.IDENTITY)
+```
+
+- `GenerationType.SEQUENCE`: Sử dụng với cơ sở dữ liệu hỗ trợ chuỗi số (sequence) như Oracle. Bạn cần phải cung cấp tên của chuỗi số mà bạn muốn sử dụng.
+```java
+@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "your_sequence_name")
+```
+
+- `GenerationType.TABLE`: Sử dụng với cơ sở dữ liệu không hỗ trợ tự động tăng hoặc chuỗi số. Hibernate (một triển khai JPA phổ biến) sẽ sử dụng một bảng tạm thời để theo dõi và sinh giá trị duy nhất cho trường. 
+```java
+@GeneratedValue(strategy = GenerationType.TABLE, generator = "your_table_generator_name")
+```
 
 
 

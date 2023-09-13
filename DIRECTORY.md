@@ -191,12 +191,23 @@
               * [SpringBoot2JpaCrudExampleApplicationTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/spring-boot2-jpa-crud-example/src/test/java/com/springbootlearning/springboot2jpacrudexample/SpringBoot2JpaCrudExampleApplicationTests.java)
 
 ## Spring-Data-JPA-Hibernate
-  * spring-data-jpa-course
+  * One-To-Many-Unidirectional
     * src
       * main
         * java
           * com
             * hoangtien2k3
+              * OneToManyUnidirectional
+                * entiry
+                  * [Order](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Spring-Data-JPA-Hibernate/One-To-Many-Unidirectional/src/main/java/com/hoangtien2k3/OneToManyUnidirectional/entiry/Order.java)
+                  * [OrderItem](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Spring-Data-JPA-Hibernate/One-To-Many-Unidirectional/src/main/java/com/hoangtien2k3/OneToManyUnidirectional/entiry/OrderItem.java)
+                * [OneToManyUnidirectionalApplication](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Spring-Data-JPA-Hibernate/One-To-Many-Unidirectional/src/main/java/com/hoangtien2k3/OneToManyUnidirectional/OneToManyUnidirectionalApplication.java)
+                * repository
+                  * [OrderRepository](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Spring-Data-JPA-Hibernate/One-To-Many-Unidirectional/src/main/java/com/hoangtien2k3/OneToManyUnidirectional/repository/OrderRepository.java)
+      * test
+                * [OneToManyUnidirectionalApplicationTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Spring-Data-JPA-Hibernate/One-To-Many-Unidirectional/src/test/java/com/hoangtien2k3/OneToManyUnidirectional/OneToManyUnidirectionalApplicationTests.java)
+  * spring-data-jpa-course
+      * main
               * springdatajpacourse
                 * entity
                   * [Address](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Spring-Data-JPA-Hibernate/spring-data-jpa-course/src/main/java/com/hoangtien2k3/springdatajpacourse/entity/Address.java)

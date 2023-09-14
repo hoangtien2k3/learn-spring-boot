@@ -191,12 +191,35 @@
               * [SpringBoot2JpaCrudExampleApplicationTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/spring-boot2-jpa-crud-example/src/test/java/com/springbootlearning/springboot2jpacrudexample/SpringBoot2JpaCrudExampleApplicationTests.java)
 
 ## Spring-Data-JPA-Hibernate
-  * One-To-Many-Bidirectional
+  * Many-To-Many-Bidirectional
     * src
       * main
         * java
           * com
             * hoangtien2k3
+              * ManyToManyBidirectional
+                * entity
+                  * [Role](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Spring-Data-JPA-Hibernate/Many-To-Many-Bidirectional/src/main/java/com/hoangtien2k3/ManyToManyBidirectional/entity/Role.java)
+                  * [User](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Spring-Data-JPA-Hibernate/Many-To-Many-Bidirectional/src/main/java/com/hoangtien2k3/ManyToManyBidirectional/entity/User.java)
+                * [ManyToManyBidirectionalApplication](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Spring-Data-JPA-Hibernate/Many-To-Many-Bidirectional/src/main/java/com/hoangtien2k3/ManyToManyBidirectional/ManyToManyBidirectionalApplication.java)
+                * repository
+                  * [RoleRepository](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Spring-Data-JPA-Hibernate/Many-To-Many-Bidirectional/src/main/java/com/hoangtien2k3/ManyToManyBidirectional/repository/RoleRepository.java)
+                  * [UserRepository](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Spring-Data-JPA-Hibernate/Many-To-Many-Bidirectional/src/main/java/com/hoangtien2k3/ManyToManyBidirectional/repository/UserRepository.java)
+      * test
+                * [ManyToManyBidirectionalApplicationTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Spring-Data-JPA-Hibernate/Many-To-Many-Bidirectional/src/test/java/com/hoangtien2k3/ManyToManyBidirectional/ManyToManyBidirectionalApplicationTests.java)
+  * Many-To-Many-Unidirectional-Mapping
+      * main
+              * entity
+                * [Role](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Spring-Data-JPA-Hibernate/Many-To-Many-Unidirectional-Mapping/src/main/java/com/hoangtien2k3/entity/Role.java)
+                * [User](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Spring-Data-JPA-Hibernate/Many-To-Many-Unidirectional-Mapping/src/main/java/com/hoangtien2k3/entity/User.java)
+              * [ManyToManyUnidirectionalMappingApplication](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Spring-Data-JPA-Hibernate/Many-To-Many-Unidirectional-Mapping/src/main/java/com/hoangtien2k3/ManyToManyUnidirectionalMappingApplication.java)
+              * repository
+                * [RoleRepository](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Spring-Data-JPA-Hibernate/Many-To-Many-Unidirectional-Mapping/src/main/java/com/hoangtien2k3/repository/RoleRepository.java)
+                * [UserRepository](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Spring-Data-JPA-Hibernate/Many-To-Many-Unidirectional-Mapping/src/main/java/com/hoangtien2k3/repository/UserRepository.java)
+      * test
+              * [ManyToManyUnidirectionalMappingApplicationTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Spring-Data-JPA-Hibernate/Many-To-Many-Unidirectional-Mapping/src/test/java/com/hoangtien2k3/ManyToManyUnidirectionalMappingApplicationTests.java)
+  * One-To-Many-Bidirectional
+      * main
               * OneToManyBidirectional
                 * entity
                   * [Order](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Spring-Data-JPA-Hibernate/One-To-Many-Bidirectional/src/main/java/com/hoangtien2k3/OneToManyBidirectional/entity/Order.java)

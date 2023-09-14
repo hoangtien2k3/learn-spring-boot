@@ -301,3 +301,40 @@ SYNTAX	DESCRIPTION
 ![image](https://github.com/hoangtien2k3qx1/learn-spring-boot/assets/122768076/065bdd1d-1800-4e6a-a8b7-8794fe556939)
 
 
+
+## Tạo database table tự động từ Hibernate Entity:
+
+![image](https://github.com/hoangtien2k3qx1/learn-spring-boot/assets/122768076/201c5dec-7eeb-4cab-a29a-92b82f8f0bec)
+
+
+![image](https://github.com/hoangtien2k3qx1/learn-spring-boot/assets/122768076/a9a0f74b-7fa4-49d9-8a27-757d84b44076)
+
+- Hibernate tạo lược đồ tự động : `spring.jpa.hibernate.ddl-auto=true`
+- Nếu chúng ta vẫn muốn có cả Hibernate tạo lược đồ tự động kết hợp với tạo lược đồ dựa trên tập lệnh và tập hợp dữ liệu, chúng ta sẽ phải sử dụng:
+`spring.jpa.defer-datasource-initialization=true`
+- Khởi tạo cơ sở dữ liệu bằng tập lệnh, chúng ta sẽ phải sử dụng: `spring.sql.init.mode=always`
+
+## Cấu hình cơ sở dữ liệu bằng cách sử dụng Hibernate:
+Spring cung cấp một thuộc tính JPA cụ thể mà Hibernate sử dụng để tạo DDL: spring.jpa.hibernate.ddl-auto.
+
+- [create (tạo)]() : Trước tiên Hibernate bỏ các bảng hiện có và sau đó tạo các bảng mới.
+- [update (cập nhật)](): Mô hình đối tượng được tạo dựa trên ánh xạ (Annotations hoặc XML) được so sánh với lược đồ hiện có, sau đó Hibernate cập nhật lược đồ theo sự khác biệt. Nó không bao giờ xóa các bảng hoặc cột hiện có ngay cả khi chúng không còn được ứng dụng yêu cầu.
+- [create - drop (tạo - xóa)](): Tương tự như tạo, với việc bổ sung Hibernate sẽ xóa cơ sở dữ liệu sau khi tất cả các hoạt động hoàn thành; thường được sử dụng cho unit testing.
+- [validate (xác thực)](): Hibernate chỉ xác nhận xem các bảng và cột có tồn tại hay không. Nếu không, nó sẽ ném ra một ngoại lệ.
+- [none](): Giá trị này sẽ ngay lập tức tắt tạo DDL.
+
+
+## Tùy chỉnh tạo lược đồ cơ sở dữ liệu:
+
+- `always`: luôn khởi tạo cơ sở dữ liệu
+- `embedded`: luôn khởi khởi tạo nếu một cơ sở dữ liệu nhúng đang được sử dụng. Đây là mặc định nếu giá trị thuộc tính không được chỉ định.
+- `never`: không bao giờ khởi tạo cơ sở dữ liệu
+
+
+
+
+
+
+
+
+

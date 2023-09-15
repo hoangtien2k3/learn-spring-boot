@@ -330,8 +330,36 @@ Spring cung cấp một thuộc tính JPA cụ thể mà Hibernate sử dụng �
 - `embedded`: luôn khởi khởi tạo nếu một cơ sở dữ liệu nhúng đang được sử dụng. Đây là mặc định nếu giá trị thuộc tính không được chỉ định.
 - `never`: không bao giờ khởi tạo cơ sở dữ liệu
 
+## @SQL: Spring cũng cung cấp Annotatios @Sql - một cách khai báo để khởi tạo và điền vào lược đồ thử nghiệm của chúng ta.
+```java
+@Sql({"/employees_schema.sql", "/import_employees.sql"})
+public class SpringBootInitialLoadIntegrationTest {
 
+    @Autowired
+    private EmployeeRepository employeeRepository;
 
+    @Test
+    public void testLoadDataForTestClass() {
+        assertEquals(3, employeeRepository.findAll().size());
+    }
+}
+```
+
+## SQL: Chú thích này có thể được sử dụng để gắn SQL query vào một lớp hoặc một phương thức trong dự án Spring Boot của bạn. 
+```java
+@SQL("SELECT * FROM users WHERE username = :username")
+public User findUserByUsername(String username) {
+    // Thực hiện truy vấn SQL ở đây
+}
+```
+
+## SQLConfig: Chú thích này có thể được sử dụng để cấu hình các thiết lập liên quan đến SQL query, ví dụ như cơ sở dữ liệu mặc định để sử dụng. 
+```java
+@SQLConfig(key = "production")
+public class ProductionDatabaseConfig {
+    // Cấu hình cho cơ sở dữ liệu sản xuất
+}
+```
 
 
 

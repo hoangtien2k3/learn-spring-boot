@@ -147,6 +147,29 @@
       * test
                 * [SpringbootRestfulWebservicesApplicationTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Exception-Handling-Mappers-And-Validations/springboot-restful-webservices/src/test/java/com/springbootlearning/springbootrestfulwebservices/SpringbootRestfulWebservicesApplicationTests.java)
 
+## JPA-Testing
+  * Unit-Testing-JUnit-Mockito
+      * main
+            * hoangtien2k3
+              * UnitTestingJUnitMockito
+                * controller
+                  * [EmployeeController](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/JPA-Testing/Unit-Testing-JUnit-Mockito/src/main/java/com/hoangtien2k3/UnitTestingJUnitMockito/controller/EmployeeController.java)
+                * entity
+                  * [Employee](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/JPA-Testing/Unit-Testing-JUnit-Mockito/src/main/java/com/hoangtien2k3/UnitTestingJUnitMockito/entity/Employee.java)
+                * exception
+                  * [ResourceNotFoundException](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/JPA-Testing/Unit-Testing-JUnit-Mockito/src/main/java/com/hoangtien2k3/UnitTestingJUnitMockito/exception/ResourceNotFoundException.java)
+                * message
+                  * [CustomResponse](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/JPA-Testing/Unit-Testing-JUnit-Mockito/src/main/java/com/hoangtien2k3/UnitTestingJUnitMockito/message/CustomResponse.java)
+                * repository
+                  * [EmployeeRepository](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/JPA-Testing/Unit-Testing-JUnit-Mockito/src/main/java/com/hoangtien2k3/UnitTestingJUnitMockito/repository/EmployeeRepository.java)
+                * service
+                  * [EmployeeService](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/JPA-Testing/Unit-Testing-JUnit-Mockito/src/main/java/com/hoangtien2k3/UnitTestingJUnitMockito/service/EmployeeService.java)
+                  * impl
+                    * [EmployeeServiceImpl](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/JPA-Testing/Unit-Testing-JUnit-Mockito/src/main/java/com/hoangtien2k3/UnitTestingJUnitMockito/service/impl/EmployeeServiceImpl.java)
+                * [UnitTestingJUnitMockitoApplication](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/JPA-Testing/Unit-Testing-JUnit-Mockito/src/main/java/com/hoangtien2k3/UnitTestingJUnitMockito/UnitTestingJUnitMockitoApplication.java)
+      * test
+                * [UnitTestingJUnitMockitoApplicationTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/JPA-Testing/Unit-Testing-JUnit-Mockito/src/test/java/com/hoangtien2k3/UnitTestingJUnitMockito/UnitTestingJUnitMockitoApplicationTests.java)
+
 ## PatchMapping-SpringBoot-Anotation
   * src
     * main
@@ -240,6 +263,16 @@
                   * [OrderRepository](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Spring-Data-JPA-Hibernate/One-To-Many-Unidirectional/src/main/java/com/hoangtien2k3/OneToManyUnidirectional/repository/OrderRepository.java)
       * test
                 * [OneToManyUnidirectionalApplicationTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Spring-Data-JPA-Hibernate/One-To-Many-Unidirectional/src/test/java/com/hoangtien2k3/OneToManyUnidirectional/OneToManyUnidirectionalApplicationTests.java)
+  * Spring-Boot-DataJpaTest
+      * main
+              * SpringBoot
+                * DataJpaTest
+                  * [Application](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Spring-Data-JPA-Hibernate/Spring-Boot-DataJpaTest/src/main/java/com/hoangtien2k3/SpringBoot/DataJpaTest/Application.java)
+                  * [Employee](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Spring-Data-JPA-Hibernate/Spring-Boot-DataJpaTest/src/main/java/com/hoangtien2k3/SpringBoot/DataJpaTest/Employee.java)
+                  * [EmployeeRepository](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Spring-Data-JPA-Hibernate/Spring-Boot-DataJpaTest/src/main/java/com/hoangtien2k3/SpringBoot/DataJpaTest/EmployeeRepository.java)
+      * test
+                  * [ApplicationTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Spring-Data-JPA-Hibernate/Spring-Boot-DataJpaTest/src/test/java/com/hoangtien2k3/SpringBoot/DataJpaTest/ApplicationTests.java)
+                  * [EmployeeRepositoryTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Spring-Data-JPA-Hibernate/Spring-Boot-DataJpaTest/src/test/java/com/hoangtien2k3/SpringBoot/DataJpaTest/EmployeeRepositoryTests.java)
   * spring-data-jpa-course
       * main
               * springdatajpacourse

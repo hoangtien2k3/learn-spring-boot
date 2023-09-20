@@ -364,20 +364,111 @@ public class ProductionDatabaseConfig {
 
 ## Annotation Thông Dụng Trong Hibernate :
 
-1. [@Entity]()
-2. [@Table]()
-3. [@Column]()
-4. [@Transient]()
-5. [@Temporal]()
-6. [@Id]()
-7. [@GeneratedValue]()
-8. [@Lob]()
-9. [@ManyToOne]()
-10. [@OneToMany]()
-11. [@OneToOne]()
-12. [@ManyToMany]()
-13. [@OrderBy]()
+1. [@Entity]() : được sử dụng để chú thích một class là một Entity.
 
+- Thuộc tính name của @Entity là không bắt buộc.
+- Entity khớp với một bảng lấy theo tên theo thứ tự ưu tiên:
+    - name trong @Table.
+    - name trong @Entity.
+    - name của class.
+
+2. [@Table]()
+- Một table trong database có thể có nhiều ràng buộc unique (duy nhất). Chúng ta có thể sử dụng @Table để mô tả các ràng buộc này
+- @Table cho phép chú thích tên bảng thông qua thuộc tính name (thuộc tính này không bắt buộc).
+- Nếu không chỉ rõ tên bảng trong phần tử name, Hibernate sẽ dựa vào phần tử name của @Entity sau đó mới tới tên của class.
+
+
+4. [@Column]()
+- @Column được sử dụng để chỉ định thông tin chi tiết của cột mà một field của entity sẽ được ánh xạ với một column trong database.
+    - Thuộc tính name được sử dụng để chị định tên cột nào trong database map với tên field được chú thích.
+    - Thuộc tính length cho phép kích thước của cột. @Column không chỉ rõ phần tử length, mặc định nó là 255.
+    - Thuộc tính nullable cho phép cột được đánh dấu KHÔNG NULL khi schema được tạo ra. Giá trị nullable mặc định là true.
+    - Thuộc tính unique cho phép cột được đánh dấu chỉ chứa các giá trị duy nhất.
+
+5. [@Transient]()
+- Trong entity class có chứa một field mà `field này không tồn tồn tại trong database`. Khi đó chúng ta sẽ gặp lỗi “java.sql.SQLSyntaxErrorException: Unknown column ‘additionalPropery’ in ‘field list'”.
+- Để tránh lỗi này, chúng ta có thể sử dụng @Transient để thông báo rằng thuộc tính/ phương thức này không liên quan gì tới một cột nào dưới database. Khi đó, Hibernate sẽ bỏ qua field này.
+
+7. [@Temporal]()
+- @Temporal sử dụng để chú thích cho cột dữ liệu ngày tháng và thời gian (date time).
+- Có 3 giá trị cho TemporalType:
+    - TemporalType.DATE : chú thích cột sẽ lưu trữ ngày tháng năm (bỏ đi thời gian).
+    - TemporalType.TIME : chú thích cột sẽ lưu trữ thời gian (Giờ phút giây).
+    - TemporalType.TIMESTAMP : chú thích cột sẽ lưu trữ ngày tháng và cả thời gian.
+
+8. [@Id]()
+- @Id được sử dụng để mô tả đây là Id (Identity) của Entity, nó tương đương với cột đó là khóa chính (Primary Key) của table trong database.
+
+9. [@GeneratedValue]()
+- @GeneratedValue được sử dụng để Hibernate tự động tạo ra giá trị và gán vào cho một cột trong trường hợp insert mới một Entity vào database.
+
+11. [@Lob]()
+- `@Lob` thường chú thích cùng với `@Column` để nói rằng cột đó có kiểu `BLOB` hoặc `CLOB`. Trong một số Database có phân biệt TINY, MEDIUM, LARGE BLOB/CLOB, còn một số database thì không.
+```java
+    @Lob
+    @Column(name = "avatar", nullable = true, length = Integer.MAX_VALUE)
+    private byte[] avatar;
+```
+
+12. [@ManyToOne]()
+- @ManyToOne mô tả một quan hệ  N-1 (Nhiều – Một), nó thường được sử dụng cùng với @JoinColumn.
+- `FetchType.LAZY`: LAZY nói với Hibernate rằng, hãy tải dữ liệu một cách lười biếng, nghĩa là chỉ tải khi được gọi (khi cần thiết).
+- `FetchType.EAGER`: EAGER nói với Hibernate rằng, hãy truy vấn toàn bộ các cột của bảng liên quan.
+
+14. [@OneToMany]()
+- `@OneToMany` mô tả quan hệ 1-N (Một – Nhiều). Nó là đảo ngược của @ManyToOne, và vì vậy nó dựa vào @ManyToOne để định nghĩa ra @OneToMany.
+
+15. [@OneToOne]()
+- `@OneToOne` mô tả quan hệ 1-1 (Một – Một).
+
+16. 
+17. [@ManyToMany]()
+- @ManyToMany mô tả quan hệ N-N (Nhiều – Nhiều).
+```java
+@Entity
+@Table
+public class Role {
+ 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+     
+    @ManyToMany(fetch = FetchType.LAZY, mappedBy = "roles")
+    private Set<User> users;
+}
+ 
+@Entity(name = "User")
+@Table(name = "user")
+public class User {
+ 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+ 
+    // ...
+     
+    @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @JoinTable(name = "user_roles", 
+        joinColumns = { @JoinColumn(name = "user_id", nullable = false, updatable = false) }, 
+        inverseJoinColumns = { @JoinColumn(name = "role_id", nullable = false, updatable = false) })
+    private Set<Role> roles;
+}
+```
+    
+19. [@OrderBy]()
+- @OrderBy được sử dụng để sắp xếp một danh sách, vì vậy nó có thể được sử dụng cùng với @OneToMany, @ManyToMany.
+```java
+@Entity
+@Table
+public class Category {
+ 
+    // ...
+ 
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "category")
+    @OrderBy("title")
+    private Set<Post> posts;
+}
+```
 
 
 

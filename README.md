@@ -362,6 +362,21 @@ public class ProductionDatabaseConfig {
 ```
 
 
+## Annotation Thông Dụng Trong Hibernate :
+
+1. [@Entity]()
+2. [@Table]()
+3. [@Column]()
+4. [@Transient]()
+5. [@Temporal]()
+6. [@Id]()
+7. [@GeneratedValue]()
+8. [@Lob]()
+9. [@ManyToOne]()
+10. [@OneToMany]()
+11. [@OneToOne]()
+12. [@ManyToMany]()
+13. [@OrderBy]()
 
 
 

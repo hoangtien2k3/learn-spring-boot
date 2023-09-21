@@ -471,4 +471,25 @@ public class Category {
 ```
 
 
+##  @Enumerated hỗ trợ hai kiểu ánh xạ Enum :
+
+- `EnumType.ORDINAL`: Khi sử dụng kiểu này, JPA sẽ lưu giá trị của enum dưới dạng số nguyên, tức là vị trí của hằng số enum trong khai báo
+- `EnumType.STRING`: Khi sử dụng kiểu này, JPA sẽ lưu giá trị của enum dưới dạng chuỗi, tức là tên của hằng số enum12. Điều này giúp giữ nguyên độ rõ ràng của mã nguồn và đảm bảo tính nhất quán khi thay đổi cấu trúc của enum
+
+```java
+public enum Status {
+    OPEN,
+    CLOSED
+}
+
+@Entity
+public class Article {
+    @Id
+    private int id;
+    private String title;
+    
+    @Enumerated(EnumType.STRING)
+    private Status status;
+}
+```
 

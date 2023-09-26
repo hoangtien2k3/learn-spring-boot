@@ -506,5 +506,6 @@ OAuth2 có 4 loại định danh chính:
 - `Client Client ID`: chuỗi ký tự được sử dụng để định danh ứng dụng.
 - `Client Secret`: là một chuỗi ký tự dùng cho việc xác thực Client khi ứng dụng yêu cầu truy cập thông tin tài khoản người dùng. Chuỗi này được giữ bí mật giữa Client và Authorization Server.
 
+Có thể hiểu Client ID là username, Client Secret là password của Client đối với Authorization cũng được. 😄
 
 

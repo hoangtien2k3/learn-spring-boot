@@ -493,3 +493,13 @@ public class Article {
 }
 ```
 
+## Tổng quan về OAuth trong việc xác thực người dùng từ hệ thống:
+
+OAuth2 có 4 loại định danh chính:
+- Authorization Code
+- Resource Owner Password Credentials
+- Implicit
+- Client Credentials
+
+
+

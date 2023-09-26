@@ -509,3 +509,47 @@ OAuth2 có 4 loại định danh chính:
 Có thể hiểu Client ID là username, Client Secret là password của Client đối với Authorization cũng được. 😄
 
 
+## Protocol Flow OAuth2: 
+```text
+ +--------+                               +---------------+
+ |        |--(A)- Authorization Request ->|   Resource    |
+ |        |                               |     Owner     |
+ |        |<-(B)-- Authorization Grant ---|               |
+ |        |                               +---------------+
+ |        |
+ |        |                               +---------------+
+ |        |--(C)-- Authorization Grant -->| Authorization |
+ | Client |                               |     Server    |
+ |        |<-(D)----- Access Token -------|               |
+ |        |                               +---------------+
+ |        |
+ |        |                               +---------------+
+ |        |--(E)----- Access Token ------>|    Resource   |
+ |        |                               |     Server    |
+ |        |<-(F)--- Protected Resource ---|               |
+ +--------+                               +---------------+
+
+ +--------+                                           +---------------+
+ |        |--(A)------- Authorization Grant --------->|               |
+ |        |                                           |               |
+ |        |<-(B)----------- Access Token -------------|               |
+ |        |               & Refresh Token             |               |
+ |        |                                           |               |
+ |        |                            +----------+   |               |
+ |        |--(C)---- Access Token ---->|          |   |               |
+ |        |                            |          |   |               |
+ |        |<-(D)- Protected Resource --| Resource |   | Authorization |
+ | Client |                            |  Server  |   |     Server    |
+ |        |--(E)---- Access Token ---->|          |   |               |
+ |        |                            |          |   |               |
+ |        |<-(F)- Invalid Token Error -|          |   |               |
+ |        |                            +----------+   |               |
+ |        |                                           |               |
+ |        |--(G)----------- Refresh Token ----------->|               |
+ |        |                                           |               |
+ |        |<-(H)----------- Access Token -------------|               |
+ +--------+           & Optional Refresh Token        +---------------+
+```
+
+
+

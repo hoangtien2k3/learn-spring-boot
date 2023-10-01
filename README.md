@@ -551,5 +551,11 @@ Có thể hiểu Client ID là username, Client Secret là password của Client
  +--------+           & Optional Refresh Token        +---------------+
 ```
 
+## JSON in Spring Annotaion:
+
+- [@JsonSerialize]():  được sử dụng để chỉ định cách một trường hoặc thuộc tính của một đối tượng Java sẽ được chuyển đổi thành JSON khi sử dụng thư viện Jackson
+- [@JsonInclude]():  được sử dụng để chỉ định rằng các trường có giá trị null sẽ không được bao gồm trong đầu ra JSON. và ngược lại nếu khác null sẽ được hiển thị ở đầu JSON.
+
+
 
 

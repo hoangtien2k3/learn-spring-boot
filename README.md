@@ -555,6 +555,8 @@ Có thể hiểu Client ID là username, Client Secret là password của Client
 
 - [@JsonSerialize]():  được sử dụng để chỉ định cách một trường hoặc thuộc tính của một đối tượng Java sẽ được chuyển đổi thành JSON khi sử dụng thư viện Jackson
 - [@JsonInclude]():  được sử dụng để chỉ định rằng các trường có giá trị null sẽ không được bao gồm trong đầu ra JSON. và ngược lại nếu khác null sẽ được hiển thị ở đầu JSON.
+- [@JsonSerialize(using = LocalDateTimeSerializer.class)](): Chú thích này định nghĩa rằng trường hoặc thuộc tính nơi nó được áp dụng sẽ được chuyển đổi từ kiểu dữ liệu LocalDateTime của Java thành chuỗi JSON bằng cách sử dụng một lớp serializer tùy chỉnh là LocalDateTimeSerializer.class. Lớp serializer này sẽ quyết định cách biểu diễn một đối tượng LocalDateTime thành chuỗi JSON.
+- [@JsonDeserialize(using = LocalDateTimeDeserializer.class)](): Chú thích này định nghĩa rằng khi chuyển đổi từ chuỗi JSON thành đối tượng Java, trường hoặc thuộc tính nơi nó được áp dụng sẽ được chuyển đổi từ chuỗi JSON thành kiểu dữ liệu LocalDateTime của Java bằng cách sử dụng một lớp deserializer tùy chỉnh là LocalDateTimeDeserializer.class. Lớp deserializer này sẽ quyết định cách chuyển đổi chuỗi JSON thành một đối tượng LocalDateTime.
 
 
 

@@ -562,5 +562,60 @@ Có thể hiểu Client ID là username, Client Secret là password của Client
 - [@JsonDeserialize(using = LocalDateTimeDeserializer.class)](): Chú thích này định nghĩa rằng khi chuyển đổi từ chuỗi JSON thành đối tượng Java, trường hoặc thuộc tính nơi nó được áp dụng sẽ được chuyển đổi từ chuỗi JSON thành kiểu dữ liệu LocalDateTime của Java bằng cách sử dụng một lớp deserializer tùy chỉnh là LocalDateTimeDeserializer.class. Lớp deserializer này sẽ quyết định cách chuyển đổi chuỗi JSON thành một đối tượng LocalDateTime.
 
 
+## Sử dụng `Model Mapper`:
+
+```java
+@Configuration
+public class ModelMapperConfig {
+    @Bean
+    public ModelMapper modelMapper() {
+        // Tạo object và cấu hình
+        ModelMapper modelMapper = new ModelMapper();
+        modelMapper.getConfiguration()
+                .setMatchingStrategy(MatchingStrategies.STRICT);
+        return modelMapper;
+    }
+}
+```
+
+sau đó là dùng `model mapper' để map giữa entity với dto và ngược lại:
+```java
+@Service
+public class UserService {
+    // Có thể inject bằng cách khác, mình viết như thế này cho gọn
+    @Autowired
+    private final ModelMapper mapper;
+
+    public UserDto getUser(String username) {
+        // Lấy User entity ra từ DB
+        User user = userRepository.findByUsername(username);
+
+        // Map thành DTO
+        UserDto userDto = mapper.map(user, UserDto.class);
+        
+        return userDto;
+    }
+}
+```
+
+#### Các mức độ của mapping (hay Matching strategy):
+có 3 loại mapping, mỗi loại có một hằng số biểu diễn (để set config):
+- Chiến lược map chuẩn: `MatchingStrategies.STANDARD`
+- Chiến lược map lỏng lẻo: `MatchingStrategies.LOOSE`
+- Chiến lược map chặt chẽ: `MatchingStrategies.STRICT`
+
+
+Vài thuộc tính cấu hình căn bản như sau:
+
+- setSkipNullEnabled() có cho phép bỏ qua thuộc tính null hay không
+- setDeepCopyEnabled() mặc định dùng shallow copy, dùng deep copy thì sẽ chậm hơn.
+- setMatchingStrategy() đặt loại mapping (như phần trên)
+- setFieldAccessLevel() chỉ định field truy cập ở mức độ nào (private, public,...)
+- setMethodAccessLevel() chỉ định mức độ truy cập method, getter và setter (như trên)
+- setSourceNameTokenizer() chỉ định quy ước đặt tên cho thuộc tính ở source (object nguồn dùng để map)
+- setDestinationNameTokenizer() chỉ định quy ước đặt tên cho thuộc tính ở đích (object map ra).
+
+
+
 
 

@@ -1,5 +1,7 @@
 # All Spring Boot Tutorials:
 - [Roadmap Spring-Boot](https://roadmap.sh/pdfs/roadmaps/spring-boot.pdf)
+- [Spring-Boot-100-Tutorials](https://bushansirgur.in/spring-boot-100-tutorials/)
+- [Spring-Security-Core](https://aithietke.com/spring-security-spring-boot-security-jwt-architecture/)
 
 ## Spring Boot Basics
 - [Getting Started with Spring Boot]()

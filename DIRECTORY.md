@@ -1,10 +1,19 @@
 
-## DeleteMapping-SpringBoot-Anotation
+## Data-JPA-JPQL
   * src
     * main
       * java
         * com
           * hoangtien2k3
+            * [DataJpaJpqlApplication](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Data-JPA-JPQL/src/main/java/com/hoangtien2k3/DataJpaJpqlApplication.java)
+            * [Laptop](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Data-JPA-JPQL/src/main/java/com/hoangtien2k3/Laptop.java)
+            * [LaptopController](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Data-JPA-JPQL/src/main/java/com/hoangtien2k3/LaptopController.java)
+            * [LaptopRepository](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Data-JPA-JPQL/src/main/java/com/hoangtien2k3/LaptopRepository.java)
+    * test
+            * [DataJpaJpqlApplicationTests](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/Data-JPA-JPQL/src/test/java/com/hoangtien2k3/DataJpaJpqlApplicationTests.java)
+
+## DeleteMapping-SpringBoot-Anotation
+    * main
             * DeleteMappingSpringBootAnotation
               * controller
                 * [TodoController](https://github.com/hoangtien2k3qx1/learn-spring-boot/blob/main/DeleteMapping-SpringBoot-Anotation/src/main/java/com/hoangtien2k3/DeleteMappingSpringBootAnotation/controller/TodoController.java)

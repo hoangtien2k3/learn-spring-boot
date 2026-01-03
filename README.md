@@ -621,5 +621,16 @@ Vài thuộc tính cấu hình căn bản như sau:
 
 
 
+# Annotation SpringBoot Details
 
+`@AutoConfiguration`: 
+- Khác @Configuration thường
+- Được Spring Boot tự load thông qua `META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports`
+- Bạn không cần @Import
+
+
+`@ConditionalOnClass`:
+- VD: @ConditionalOnClass({ RabbitTemplate.class, Channel.class })
+  - Chỉ kích hoạt nếu: spring-amqp, com.rabbitmq.client.Channel
+  - Không có dependency → auto-config câm miệng
 
